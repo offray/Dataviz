@@ -29,21 +29,19 @@
 
   # Summary
 
-
+  Dataviz is a companion package for Grafoscopio [ @luna-2014] that puts together several examples of Domain
+  Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the Roassal
+  agile visualization engine [@bergel].
+  Included prototypes approach several themes like:  
+  Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
+  and published medicine access [@luna-infomed] and are presented via blog post and internal 
+  interactive documentation via Grafoscopio notebooks.
+  The classes in the package and their documentation show several levels of maturity from pretty mature 
+  (Panama Papers) to early coder practices (Infomed) and are offered as examples and excersises to learners in our
+  recurrent Dataviz workshop+hackathon, for code testing and refactoring.
   
-  <figure><a href="../../../../Imagenes/side-by-side.png">
-    <img
-	src="../../../../Imagenes/side-by-side.png"
-	style="width:85%"
-	alt="Grafoscopio environment and a final generated pdf, side by side."
-    >
-  </a>
-  <figcaption><small><b>^Up |</b> 
-       Grafoscopio environment and the final pdf, side by side.
-       </small> 
-    </figcaption>
-  <figure>
-  \includegraphics{../../../../Imagenes/side-by-side.png}
+  
+  
 
   # References
 
