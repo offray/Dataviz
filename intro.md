@@ -44,7 +44,7 @@ and [published medicine information access][infomed] and are presented via blog 
 interactive documentation via Grafoscopio notebooks.
 The classes in the package and their documentation show several levels of maturity from pretty mature 
 (Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
-are offered as examples and excersises to learners in our recurrent [Data Week][dataweek[ workshop+hackathon, 
+are offered as examples and excersises to learners in our recurrent [Data Week][dataweek] workshop+hackathon, 
 for code testing and refactoring.
 
 It is suposed that you have familiarity with Grafoscopio and that you are in the same audience, as stated
