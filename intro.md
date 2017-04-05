@@ -28,9 +28,17 @@ Here are some other quick entry points for Dataviz:
     [[LaTeX](./paper.tex)] | 
     [[PDF](./paper.pdf)].
   - The [Dataviz readme](./readme.html) file.
-  - The [source code repository][dataviz-sthub] on SmalltalkHub.
+  - The [Dataviz source code repository][dataviz-sthub] on SmalltalkHub.
 
 
+
+<p>
+  <a href="https://offray.withknown.com/file/d7797ce24c4505247df21171050ac87a/avatar-wheel.png">
+    <img 
+      src="https://offray.withknown.com/file/e9cc5646d905a316c2cce14402aa5a05/thumb.png" 
+      alt="Starting avatar wheel" />
+  </a>
+</p>
 
 
 

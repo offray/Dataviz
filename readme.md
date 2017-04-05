@@ -29,7 +29,7 @@ Here are some other quick entry points for Dataviz:
     [[source](./JOSS/paper.md)] | 
     [[LaTeX](./paper.tex)] | 
     [[PDF](./paper.pdf)].
-  - The [source code repository][grafoscopio-sthub] on SmalltalkHub.
+  - The [Dataviz source code repository][grafoscopio-sthub] on SmalltalkHub.
 
 ### Instalation instructions
 
