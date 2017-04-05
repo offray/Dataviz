@@ -43,7 +43,6 @@ Here are some other quick entry points for Dataviz:
 
   <a href="http://mutabit.com/offray/blog/en/entry/sdv-infomed">
     <img 
-    style="align: center; width: 100%; 
     margin-right: 1%; 
     margin-bottom: 0.5em;" 
     src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/sdv-infomed/omeprazol-by-property.png" 
