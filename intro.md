@@ -1,37 +1,5 @@
 # The Dataviz package
 
-Dataviz, is a companion package for [Grafoscopio][grafoscopio-en] that puts together several examples of Domain
-Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
-[Roassal agile visualization engine][roassal].
-Included prototypes approach several themes like:  
-Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
-and published medicine access [@luna-infomed] and are presented via blog post and internal 
-interactive documentation via Grafoscopio notebooks.
-The classes in the package and their documentation show several levels of maturity from pretty mature 
-(Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
-are offered as examples and excersises to learners in our recurrent Dataviz workshop+hackathon, for code 
-testing and refactoring.
-
-It is suposed that you have familiarity with Grafoscopio and that you are in the same audience, as stated
-in its manual:
-
-> Grafoscopio and its companion package, Dataviz, are intended to be used by learners and researchers 
-in several fields: academia, journalism, activism, hacktivism and for anyone interested in open reproducible 
-research and data storytelling backed by data and agile visualizations [@bergel_agile_2016].
-This document assumes that you are such person.
-
-Here are some other quick entry points for Dataviz:
-
-  - The Dataviz paper for [JOSS][joss] will give you a quick scholar view for the software: 
-    abstract, metatada and links and to dig deeper:
-    [[source](./JOSS/paper.md)] | 
-    [[LaTeX](./paper.tex)] | 
-    [[PDF](./paper.pdf)].
-  - The [Dataviz readme](./readme.html) file.
-  - The [Dataviz source code repository][dataviz-sthub] on SmalltalkHub.
-
-
-
 <p>
   <a href="http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup">
     <img 
@@ -67,6 +35,38 @@ From left to right: Twitter dataselfies, Panama Papers and medical information.
 Click on each image for more details.
 </small></p>
 
+Dataviz, is a companion package for [Grafoscopio][grafoscopio-en] that puts together several examples of Domain
+Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
+[Roassal agile visualization engine][roassal].
+Included prototypes approach several themes like:  
+Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
+and published medicine access [@luna-infomed] and are presented via blog post and internal 
+interactive documentation via Grafoscopio notebooks.
+The classes in the package and their documentation show several levels of maturity from pretty mature 
+(Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
+are offered as examples and excersises to learners in our recurrent Dataviz workshop+hackathon, for code 
+testing and refactoring.
+
+It is suposed that you have familiarity with Grafoscopio and that you are in the same audience, as stated
+in its [manual][grafoscopio-manual]:
+
+> Grafoscopio and its companion package, Dataviz, are intended to be used by learners and researchers 
+in several fields: academia, journalism, activism, hacktivism and for anyone interested in open reproducible 
+research and data storytelling backed by data and agile visualizations.
+This document assumes that you are such person.
+
+Here are some other quick entry points for Dataviz:
+
+  - The Dataviz paper for [JOSS][joss] will give you a quick scholar view for the software: 
+    abstract, metatada and links and to dig deeper:
+    [[source](./JOSS/paper.md)] | 
+    [[LaTeX](./paper.tex)] | 
+    [[PDF](./paper.pdf)].
+  - The [Dataviz readme](./readme.html) file.
+  - The [Dataviz source code repository][dataviz-sthub] on SmalltalkHub.
+
+
+
 [agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html
 [beaker]: http://beakernotebook.com/
 [bibtex]: https://en.wikipedia.org/wiki/BibTeX
@@ -83,6 +83,7 @@ Click on each image for more details.
 [joss]: http://joss.theoj.org/
 [grafoscopio-en]: http://mutabit.com/grafoscopio/index.en.html
 [grafoscopio-fossil]: http://mutabit.com/repos.fossil/grafoscopio/
+[grafoscopio-manual]: http://mutabit.com/repos.fossil/grafoscopio/doc/tip/Docs/En/Books/Manual/manual.pdf
 [grafoscopio-tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket
 [grafoscopio-tickets-current]: http://mutabit.com/repos.fossil/grafoscopio/rptview?rn=1
 [grafoscopio-sthub]: http://smalltalkhub.com/#!/~Offray/Grafoscopio
