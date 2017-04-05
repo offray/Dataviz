@@ -57,14 +57,13 @@ This document assumes that you are such person.
 
 Here are some other quick entry points for Dataviz:
 
+  - The [Dataviz readme](./readme.html) file.
   - The Dataviz paper for [JOSS][joss] will give you a quick scholar view for the software: 
     abstract, metatada and links and to dig deeper:
     [[source](./JOSS/paper.md)] | 
     [[LaTeX](./paper.tex)] | 
     [[PDF](./paper.pdf)].
-  - The [Dataviz readme](./readme.html) file.
   - The [Dataviz source code repository][dataviz-sthub] on SmalltalkHub.
-
 
 
 [agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html

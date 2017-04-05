@@ -2,6 +2,41 @@
 
 
 
+<p>
+  <a href="http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup">
+    <img 
+      src="https://offray.withknown.com/file/e9cc5646d905a316c2cce14402aa5a05/thumb.png" 
+      alt="Starting avatar wheel" 
+      width="30%"
+    />
+  </a>
+
+  <a href="http://mutabit.com/offray/blog/en/entry/sdv-infomed">
+    <img 
+    margin-right: 1%; 
+    margin-bottom: 0.5em;" 
+    src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/sdv-infomed/omeprazol-by-property.png" 
+    alt="Ranibizumab's matrix sunburst for prescription and use data by country"
+    width="30%"
+    >
+  </a>
+
+  <a href="http://mutabit.com/offray/blog/en/entry/panama-papers-1">
+    <img 
+    src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/panama-papers-1/minisite.png" 
+    alt="Panama Papers minisite"
+    width="30%"
+    >
+  </a>    
+</p>
+
+<p><small>
+<b>^ Up |</b> 
+Screenshots of the visualizations contained in the Dataviz package. 
+From left to right: Twitter dataselfies, medical information and Panama Papers. 
+Click on each image for more details.
+</small></p>
+
 Dataviz is a companion package for [Grafoscopio][grafoscopio-en] that puts together several examples of Domain
 Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
 [Roassal agile visualization engine][roassal].
