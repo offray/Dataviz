@@ -38,7 +38,7 @@ Click on each image for more details.
 Dataviz, is a companion package for [Grafoscopio][grafoscopio-en] that puts together several examples of Domain
 Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
 [Roassal agile visualization engine][roassal].
-Included prototypes approach several themes like:  
+Included prototypes approach several themes like:
 [Panama Papers as reproducible Research][panama-papers], [Twitter Data Selfies][twitter-ds]
 and [published medicine information access][infomed] and are presented via blog post and internal 
 interactive documentation via Grafoscopio notebooks.
