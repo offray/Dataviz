@@ -33,26 +33,30 @@ Here are some other quick entry points for Dataviz:
 
 
 <p>
-  <a href="https://offray.withknown.com/file/d7797ce24c4505247df21171050ac87a/avatar-wheel.png">
+  <a href="http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup">
     <img 
       src="https://offray.withknown.com/file/e9cc5646d905a316c2cce14402aa5a05/thumb.png" 
       alt="Starting avatar wheel" 
-      width="50%"
+      width="40%"
     />
   </a>
 </p>
 
 <p style="text-align:center;">
-  <a href="http://mutabit.com/repos.fossil/panama-papers/doc/tip/index.html">
+  <a href="http://mutabit.com/offray/blog/en/entry/panama-papers-1">
     <img 
     style="align: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;"   
     src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/panama-papers-1/minisite.png" 
     alt="Panama Papers minisite"
+    width="40%"
     >
   </a>    
 </p>
 <p><small>
-<b>^ Figure 5 |</b> Panama Papers reproducible data visualization minisite. Click on the image for visiting the site.
+<b>^ Up |</b> 
+Screenshots of the visualizations contained in the Dataviz package. 
+From left to right: Twitter dataselfies, Panama Papers and medical information. 
+Click on each image for more details.
 </small></p>
 
 [agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html
