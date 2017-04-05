@@ -1,4 +1,4 @@
-# Readme
+# Dataviz readme
 
 Dataviz is a companion package for [Grafoscopio][grafoscopio-en] that puts together several examples of Domain
 Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
@@ -28,6 +28,8 @@ Here are some other quick entry points for Dataviz:
     [[LaTeX](./paper.tex)] | 
     [[PDF](./paper.pdf)].
   - The [source code repository][grafoscopio-sthub] on SmalltalkHub.
+
+
 
 ### Instalation instructions
 
