@@ -1,0 +1,42 @@
+<h1 id="dataviz-readme">Dataviz readme</h1>
+<p>Dataviz is a companion package for <a href="http://mutabit.com/grafoscopio/index.en.html">Grafoscopio</a> that puts together several examples of Domain Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the <a href="http://agilevisualization.com/">Roassal agile visualization engine</a>. Included prototypes approach several themes like:<br />
+Panama Papers as reproducible Research <span class="citation">[@luna-pp]</span>, Twitter Data Selfies <span class="citation">[@luna-tds]</span> and published medicine access <span class="citation">[@luna-infomed]</span> and are presented via blog post and internal interactive documentation via Grafoscopio notebooks. The classes in the package and their documentation show several levels of maturity from pretty mature (Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and are offered as examples and excersises to learners in our recurrent Dataviz workshop+hackathon, for code testing and refactoring.</p>
+<p>It is suposed that you have familiarity with Grafoscopio and that you are in the same audience, as stated in its manual:</p>
+<blockquote>
+<p>Grafoscopio and its companion package, Dataviz, are intended to be used by learners and researchers in several fields: academia, journalism, activism, hacktivism and for anyone interested in open reproducible research and data storytelling backed by data and agile visualizations <span class="citation">[@bergel_agile_2016]</span>. This document assumes that you are such person.</p>
+</blockquote>
+<p>Here are some other quick entry points for Dataviz:</p>
+<ul>
+<li>The Dataviz paper for <a href="http://joss.theoj.org/">JOSS</a> will give you a quick scholar view for the software: abstract, metatada and links and to dig deeper: [<a href="./JOSS/paper.md">source</a>] | [<a href="./paper.tex">LaTeX</a>] | [<a href="./paper.pdf">PDF</a>].</li>
+<li>The <a href="http://smalltalkhub.com/#!/~Offray/Grafoscopio">Dataviz source code repository</a> on SmalltalkHub.</li>
+</ul>
+<h3 id="instalation-instructions">Instalation instructions</h3>
+<p>Dataviz package is installed by default with the installation of Grafoscopio, but you can install it separately by using Monticello Pharo package manager configurations. To install and load Dataviz, simply run:</p>
+<div class="sourceCode"><table class="sourceCode numberLines"><tr class="sourceCode"><td class="lineNumbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="sourceCode"><pre><code class="sourceCode">&quot;Start by loading the configuration of Dataviz&quot;
+  Gofer new
+    url: &#39;http://smalltalkhub.com/Offray/Dataviz/main&#39;;
+    package: &#39;ConfigurationOfDataviz&#39;;
+  load.
+
+&quot;After that load Datavi&quot;
+ConfigurationOfDataviz load.</code></pre></td></tr></table></div>
+<h3 id="usage-instructions-examples">Usage instructions &amp; Examples</h3>
+<p>As we said, Dataviz is a set of packaged exmaples of Domain Specific Visualizations and Domain Specific Language (DSV and DSL) using Roassal agile visualization engine and/or documented with Grafoscopio notebook, so the usage instructions is related with how to use and explore such examples.</p>
+<p>Dataviz presents a main notebook (from which this ̀readme ̀ file was generated), that introduce its Domain Specific Visualizations &amp; Languages. To open the notebook go to the Grafoscopio docking bar</p>
+<h3 id="api-documentation">API documentation</h3>
+<h3 id="test">Test</h3>
+<h3 id="community-guidelines">Community Guidelines</h3>
+<h3 id="licences">Licences</h3>
+<p>Dataviz is licensed under MIT license and the readme and the Dataviz documentation downloaded with the package installation is licensed under a modified P2P license. To see a full copy of such respective licenses, please visit the files under this repository:</p>
+<ul>
+<li>./Docs/En/Licenses/grafoscopio-mit.md</li>
+<li>./Docs/En/Licenses/documents-p2p-ismb.md</li>
+</ul>
