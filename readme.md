@@ -1,5 +1,7 @@
 # Dataviz readme
 
+
+
 Dataviz is a companion package for [Grafoscopio][grafoscopio-en] that puts together several examples of Domain
 Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
 [Roassal agile visualization engine][roassal].
@@ -28,8 +30,6 @@ Here are some other quick entry points for Dataviz:
     [[LaTeX](./paper.tex)] | 
     [[PDF](./paper.pdf)].
   - The [source code repository][grafoscopio-sthub] on SmalltalkHub.
-
-
 
 ### Instalation instructions
 
@@ -79,6 +79,7 @@ To open the notebook go to the Grafoscopio docking bar
 [chocolatey]: https://chocolatey.org/
 [citezen]: http://people.untyped.org/damien.pollet/software/citezen/
 [d3js]: https://d3js.org/
+[dataviz-sthub]: http://smalltalkhub.com/#!/~Offray/Dataviz 
 [dataweek]: http://mutabit.com/dataweek/
 [etherpad]: https://en.wikipedia.org/wiki/Etherpad
 [flare]: http://flare.prefuse.org/
