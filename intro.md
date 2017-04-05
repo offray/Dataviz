@@ -31,7 +31,7 @@
 <p><small>
 <b>^ Up |</b> 
 Screenshots of the visualizations contained in the Dataviz package. 
-From left to right: Twitter dataselfies, Panama Papers and medical information. 
+From left to right: Twitter dataselfies, medical information and Panama Papers. 
 Click on each image for more details.
 </small></p>
 
@@ -39,8 +39,8 @@ Dataviz, is a companion package for [Grafoscopio][grafoscopio-en] that puts toge
 Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
 [Roassal agile visualization engine][roassal].
 Included prototypes approach several themes like:  
-Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
-and published medicine access [@luna-infomed] and are presented via blog post and internal 
+[Panama Papers as reproducible Research][panama-papers], [Twitter Data Selfies][twitter-ds]
+and [published medicine information access][infomed] and are presented via blog post and internal 
 interactive documentation via Grafoscopio notebooks.
 The classes in the package and their documentation show several levels of maturity from pretty mature 
 (Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
@@ -92,6 +92,7 @@ Here are some other quick entry points for Dataviz:
 [gogs]: https://gogs.io/
 [gt-tools]: http://gtoolkit.org/
 [hackbo]: http://hackbo.co/
+[infomed]: http://mutabit.com/offray/blog/en/entry/sdv-infomed
 [json]: http://en.wikipedia.org/wiki/JavaScript_Object_Notation
 [jupyter]: http://jupyter.org/
 [jupyterlab]: http://jupyterlab.github.io/jupyterlab/
@@ -110,8 +111,9 @@ Here are some other quick entry points for Dataviz:
 [nteract]: https://nteract.io/
 [oop-pharo-2017]: https://ci.inria.fr/pharo-contribution/view/Books/job/LearningObjectOrientedProgramming/98/artifact/book.pdf
 [org-mode]: http://orgmode.org/
-[pastebin]: https://en.wikipedia.org/wiki/Pastebin
+[panama-papers]: http://mutabit.com/offray/blog/en/entry/panama-papers-1
 [pandoc]: http://pandoc.org/
+[pastebin]: https://en.wikipedia.org/wiki/Pastebin
 [pharo]: http://pharo.org/
 [pharo-download]: http://pharo.org/download
 [pollen]: http://docs.racket-lang.org/pollen/
@@ -124,6 +126,7 @@ Here are some other quick entry points for Dataviz:
 [sqlite]: http://sqlite.org/
 [ston]: https://github.com/svenvc/ston/blob/master/ston-paper.md
 [texmacs]: http://texmacs.org/
+[twitter-ds]: http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup
 [udbc]: http://www.smalltalkhub.com/#!/~TorstenBergmann/UDBC 
 [zeppling]: http://zeppelin-project.org/
 [zotero]: https://www.zotero.org/
