@@ -40,7 +40,16 @@ Here are some other quick entry points for Dataviz:
   </a>
 </p>
 
-
+<p style="text-align:center;">
+  <a href="http://mutabit.com/repos.fossil/panama-papers/doc/tip/index.html">
+    <img 
+    style="align: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;"   
+    src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/panama-papers-1/minisite.png" 
+    alt="Panama Papers minisite"></a>    
+</p>
+<p><small>
+<b>^ Figure 5 |</b> Panama Papers reproducible data visualization minisite. Click on the image for visiting the site.
+</small></p>
 
 [agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html
 [beaker]: http://beakernotebook.com/
