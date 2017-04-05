@@ -41,6 +41,28 @@ Here are some other quick entry points for Dataviz:
     />
   </a>
 
+  <a href="http://mutabit.com/offray/blog/en/entry/sdv-infomed">
+    <img 
+    style="align: center; width: 100%; 
+    margin-right: 1%; 
+    margin-bottom: 0.5em;" 
+    src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/sdv-infomed/omeprazol-by-property.png" 
+    alt="Ranibizumab's matrix sunburst for prescription and use data by country">
+    width="40%"
+</a>
+
+
+<small>
+    <b>^Up |</b> Matrix sunburst made with Roassal for visualizing published 
+    prescription and use data for omeprazol medicine released 
+    by govenrment in 16 countries.
+    Colors indicate the presence of information according to the conventions at
+    the right, while white and grey colors talk about information absence or 
+    not approved variants.
+    For a futher complete analisys I recommend to read the full thesis soon.
+</small>
+</p>
+
   <a href="http://mutabit.com/offray/blog/en/entry/panama-papers-1">
     <img 
     style="align: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;"   
@@ -50,6 +72,7 @@ Here are some other quick entry points for Dataviz:
     >
   </a>    
 </p>
+
 <p><small>
 <b>^ Up |</b> 
 Screenshots of the visualizations contained in the Dataviz package. 
