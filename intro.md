@@ -46,8 +46,9 @@ Here are some other quick entry points for Dataviz:
     margin-right: 1%; 
     margin-bottom: 0.5em;" 
     src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/sdv-infomed/omeprazol-by-property.png" 
-    alt="Ranibizumab's matrix sunburst for prescription and use data by country">
+    alt="Ranibizumab's matrix sunburst for prescription and use data by country"
     width="40%"
+    >
   </a>
 
   <a href="http://mutabit.com/offray/blog/en/entry/panama-papers-1">
