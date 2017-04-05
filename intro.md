@@ -40,9 +40,7 @@ Here are some other quick entry points for Dataviz:
       width="40%"
     />
   </a>
-</p>
 
-<p style="text-align:center;">
   <a href="http://mutabit.com/offray/blog/en/entry/panama-papers-1">
     <img 
     style="align: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;"   
