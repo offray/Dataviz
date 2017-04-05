@@ -37,7 +37,7 @@ Here are some other quick entry points for Dataviz:
     <img 
       src="https://offray.withknown.com/file/e9cc5646d905a316c2cce14402aa5a05/thumb.png" 
       alt="Starting avatar wheel" 
-      scale="33%"
+      width="50%"
     />
   </a>
 </p>
