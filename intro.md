@@ -46,7 +46,7 @@ Here are some other quick entry points for Dataviz:
     style="align: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;"   
     src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/panama-papers-1/minisite.png" 
     alt="Panama Papers minisite"
-    width="20%"
+    width="10%"
     >
   </a>    
 </p>
