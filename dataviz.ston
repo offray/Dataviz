@@ -1,0 +1,2750 @@
+OrderedCollection [
+	GrafoscopioNode {
+		#header : 'Notebook Intro',
+		#body : 'This notebook introduce the ',
+		#children : OrderedCollection [ ],
+		#parent : GrafoscopioNode {
+			#header : 'Arbol principal',
+			#body : '',
+			#children : @1,
+			#level : 0,
+			#nodesInPreorder : OrderedCollection [
+				@4,
+				@2,
+				GrafoscopioNode {
+					#header : '%idea Dataviz folder intro',
+					#body : '# The Dataviz package',
+					#children : OrderedCollection [
+						GrafoscopioNode {
+							#header : '%idea screenshots',
+							#body : '<p>
+  <a href="http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup">
+    <img 
+      src="https://offray.withknown.com/file/e9cc5646d905a316c2cce14402aa5a05/thumb.png" 
+      alt="Starting avatar wheel" 
+      width="30%"
+    />
+  </a>
+
+  <a href="http://mutabit.com/offray/blog/en/entry/sdv-infomed">
+    <img 
+    margin-right: 1%; 
+    margin-bottom: 0.5em;" 
+    src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/sdv-infomed/omeprazol-by-property.png" 
+    alt="Ranibizumab\'s matrix sunburst for prescription and use data by country"
+    width="30%"
+    >
+  </a>
+
+  <a href="http://mutabit.com/offray/blog/en/entry/panama-papers-1">
+    <img 
+    src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/panama-papers-1/minisite.png" 
+    alt="Panama Papers minisite"
+    width="30%"
+    >
+  </a>    
+</p>
+
+<p><small>
+<b>^ Up |</b> 
+Screenshots of the visualizations contained in the Dataviz package. 
+From left to right: Twitter dataselfies, medical information and Panama Papers. 
+Click on each image for more details.
+</small></p>',
+							#children : OrderedCollection [ ],
+							#parent : @6,
+							#level : 2,
+							#links : OrderedCollection [
+								''
+							]
+						},
+						GrafoscopioNode {
+							#header : '%idea overview',
+							#body : 'Dataviz, is a companion package for [Grafoscopio][grafoscopio-en] that puts together several examples of Domain
+Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
+[Roassal agile visualization engine][roassal].
+Included prototypes approach several themes like:
+[Panama Papers as reproducible Research][panama-papers], [Twitter Data Selfies][twitter-ds]
+and [published medicine information access][infomed] and are presented via blog post and internal 
+interactive documentation via Grafoscopio notebooks.
+The classes in the package and their documentation show several levels of maturity from pretty mature 
+(Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
+are offered as examples and excersises to learners in our recurrent [Data Week][dataweek[ workshop+hackathon, 
+for code testing and refactoring.
+
+It is suposed that you have familiarity with Grafoscopio and that you are in the same audience, as stated
+in its [manual][grafoscopio-manual]:
+
+> Grafoscopio and its companion package, Dataviz, are intended to be used by learners and researchers 
+in several fields: academia, journalism, activism, hacktivism and for anyone interested in open reproducible 
+research and data storytelling backed by data and agile visualizations.
+This document assumes that you are such person.
+
+Here are some other quick entry points for Dataviz:
+
+  - The [Dataviz readme](./readme.html) file.
+  - The Dataviz paper for [JOSS][joss] will give you a quick scholar view for the software: 
+    abstract, metatada and links and to dig deeper:
+    [[source](./JOSS/paper.md)] | 
+    [[LaTeX](./paper.tex)] | 
+    [[PDF](./paper.pdf)].
+  - The [Dataviz source code repository][dataviz-sthub] on SmalltalkHub.
+',
+							#children : OrderedCollection [ ],
+							#parent : @6,
+							#level : 2,
+							#nodesInPreorder : OrderedCollection [
+								@11
+							],
+							#links : OrderedCollection [
+								''
+							]
+						},
+						GrafoscopioNode {
+							#header : '%idea external links',
+							#body : '[agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html
+[beaker]: http://beakernotebook.com/
+[bibtex]: https://en.wikipedia.org/wiki/BibTeX
+[chocolatey]: https://chocolatey.org/
+[citezen]: http://people.untyped.org/damien.pollet/software/citezen/
+[d3js]: https://d3js.org/
+[dataviz-sthub]: http://smalltalkhub.com/#!/~Offray/Dataviz 
+[dataweek]: http://mutabit.com/dataweek/
+[etherpad]: https://en.wikipedia.org/wiki/Etherpad
+[flare]: http://flare.prefuse.org/
+[floor-function]: https://en.wikipedia.org/wiki/Floor_and_ceiling_functions
+[fuel]: http://rmod.inria.fr/web/software/Fuel
+[fossil]: http://fossil-scm.org/
+[joss]: http://joss.theoj.org/
+[grafoscopio-en]: http://mutabit.com/grafoscopio/index.en.html
+[grafoscopio-fossil]: http://mutabit.com/repos.fossil/grafoscopio/
+[grafoscopio-manual]: http://mutabit.com/repos.fossil/grafoscopio/doc/tip/Docs/En/Books/Manual/manual.pdf
+[grafoscopio-tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket
+[grafoscopio-tickets-current]: http://mutabit.com/repos.fossil/grafoscopio/rptview?rn=1
+[grafoscopio-sthub]: http://smalltalkhub.com/#!/~Offray/Grafoscopio
+[git]: https://en.wikipedia.org/wiki/Git
+[github]: https://en.wikipedia.org/wiki/GitHub
+[gogs]: https://gogs.io/
+[gt-tools]: http://gtoolkit.org/
+[hackbo]: http://hackbo.co/
+[infomed]: http://mutabit.com/offray/blog/en/entry/sdv-infomed
+[json]: http://en.wikipedia.org/wiki/JavaScript_Object_Notation
+[jupyter]: http://jupyter.org/
+[jupyterlab]: http://jupyterlab.github.io/jupyterlab/
+[latex]: https://en.wikipedia.org/wiki/LaTeX
+[leo]: http://leoeditor.com
+[light-markup-languages]: https://en.wikipedia.org/wiki/Light_markup_language
+[manual-tip]: http://mutabit.com/repos.fossil/grafoscopio/dir?tip&name=Docs/En/Books/Manual
+[markdown]: http://pandoc.org/MANUAL.html#pandocs-markdown
+[mooc]: https://siemenbaader.github.io/PharoMooc-website/
+[mooc-spotter1]: http://rmod-pharo-mooc.lille.inria.fr/MOOC/Videos/W3/C019-Videos-Spotter1-BrowsingAClassWithSpotter-V2-HD_720p_4Mbs.m4v
+[mooc-spotter2]: http://rmod-pharo-mooc.lille.inria.fr/MOOC/Videos/W3/C019-Videos-Spotter2-Categories-V2-HD_720p_4Mbs.m4v
+[mooc-w3-14]: http://amara.org/en/videos/04UWGMwnrdXz/info/rmod-pharo-mooclilleinriafrc019-videos-redo-dsl-hd_720p_4mbsm4v/
+[neojson]: https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/NeoJSON/NeoJSON.html
+[nix]: http://nixos.org/nix/
+[nosql]: https://en.wikipedia.org/wiki/NoSQL
+[nteract]: https://nteract.io/
+[oop-pharo-2017]: https://ci.inria.fr/pharo-contribution/view/Books/job/LearningObjectOrientedProgramming/98/artifact/book.pdf
+[org-mode]: http://orgmode.org/
+[panama-papers]: http://mutabit.com/offray/blog/en/entry/panama-papers-1
+[pandoc]: http://pandoc.org/
+[pastebin]: https://en.wikipedia.org/wiki/Pastebin
+[pharo]: http://pharo.org/
+[pharo-download]: http://pharo.org/download
+[pollen]: http://docs.racket-lang.org/pollen/
+[processing]: https://processing.org/
+[raphaeljs]: https://dmitrybaranovskiy.github.io/raphael/
+[roassal]: http://agilevisualization.com/
+[rolling-release]: https://en.wikipedia.org/wiki/Rolling_release
+[spec]: http://files.pharo.org/books/spec-tutorial/
+[spotter]: http://gtoolkit.org/#spotter
+[sqlite]: http://sqlite.org/
+[ston]: https://github.com/svenvc/ston/blob/master/ston-paper.md
+[texmacs]: http://texmacs.org/
+[twitter-ds]: http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup
+[udbc]: http://www.smalltalkhub.com/#!/~TorstenBergmann/UDBC 
+[zeppling]: http://zeppelin-project.org/
+[zotero]: https://www.zotero.org/
+[zotero-manual]: https://www.zotero.org/groups/diseo_y_creacion_phd_msc_universidad_de_caldas/items/collectionKey/PHGTCZVT',
+							#children : OrderedCollection [ ],
+							#parent : @6,
+							#level : 2,
+							#nodesInPreorder : OrderedCollection [
+								@15
+							],
+							#links : OrderedCollection [
+								''
+							]
+						}
+					],
+					#parent : @4,
+					#level : 1,
+					#nodesInPreorder : OrderedCollection [
+						@6,
+						@8,
+						@11,
+						@15
+					],
+					#links : OrderedCollection [
+						'',
+						'intro.md'
+					]
+				},
+				@8,
+				@11,
+				@15,
+				GrafoscopioNode {
+					#header : 'Dataviz readme',
+					#body : '',
+					#children : OrderedCollection [
+						GrafoscopioNode {
+							#header : '%idea overview',
+							#body : 'Dataviz is a companion package for [Grafoscopio][grafoscopio-en] that puts together several examples of Domain
+Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
+[Roassal agile visualization engine][roassal].
+Included prototypes approach several themes like:  
+Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
+and published medicine access [@luna-infomed] and are presented via blog post and internal 
+interactive documentation via Grafoscopio notebooks.
+The classes in the package and their documentation show several levels of maturity from pretty mature 
+(Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
+are offered as examples and excersises to learners in our recurrent Dataviz workshop+hackathon, for code 
+testing and refactoring.
+
+It is suposed that you have familiarity with Grafoscopio and that you are in the same audience, as stated
+in its manual:
+
+> Grafoscopio and its companion package, Dataviz, are intended to be used by learners and researchers 
+in several fields: academia, journalism, activism, hacktivism and for anyone interested in open reproducible 
+research and data storytelling backed by data and agile visualizations [@bergel_agile_2016].
+This document assumes that you are such person.
+
+Here are some other quick entry points for Dataviz:
+
+  - The Dataviz paper for [JOSS][joss] will give you a quick scholar view for the software: 
+    abstract, metatada and links and to dig deeper:
+    [[source](./JOSS/paper.md)] | 
+    [[LaTeX](./paper.tex)] | 
+    [[PDF](./paper.pdf)].
+  - The [Dataviz source code repository][grafoscopio-sthub] on SmalltalkHub.',
+							#children : @12,
+							#parent : GrafoscopioNode {
+								#header : 'Readme',
+								#body : ' Dataviz is a companion package for [Grafoscopio][grafoscopio-en] that puts together several examples of Domain
+  Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
+  [Roassal agile visualization engine][roassal].
+  Included prototypes approach several themes like:  
+  Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
+  and published medicine access [@luna-infomed] and are presented via blog post and internal 
+  interactive documentation via Grafoscopio notebooks.
+  The classes in the package and their documentation show several levels of maturity from pretty mature 
+  (Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
+  are offered as examples and excersises to learners in our recurrent Dataviz workshop+hackathon, for code 
+  testing and refactoring.
+',
+								#children : @22,
+								#parent : GrafoscopioNode {
+									#header : 'Dataviz',
+									#body : Text {
+										#string : '',
+										#runs : RunArray {
+											#runs : [ ],
+											#values : [ ]
+										}
+									},
+									#children : OrderedCollection [
+										@24,
+										GrafoscopioNode {
+											#header : '%idea JOSS paper',
+											#body : '  ---
+  title: \'Dataviz: A package of domain specific visualizations and languages for the Pharo live coding environment\'
+  tags:
+    - literate computing
+    - reproducible research
+    - data visualization
+    - agile visualization
+    - data activism
+    - pocket infrastructures
+    - moldable tools
+    - civil tech
+    - grafoscopio
+  authors:
+   - name: Offray Vladimir Luna Cárdenas
+     orcid: 0000-0002-4640-6984
+     affiliation: 1
+     affiliation: 2
+     affiliation: 3
+  affiliations:
+   - name: HackBo: a hackerspace in Bogotá
+     index: 1
+   - name: mutabiT
+     index: 2
+  - name: University of Caldas
+     index: 3
+  date: 29 March 2017
+  bibliography: paper.bib
+  ---
+
+  # Summary
+
+  Dataviz is a companion package for Grafoscopio [ @luna-2014] that puts together several examples of Domain
+  Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the Roassal
+  agile visualization engine [@bergel].
+  Included prototypes approach several themes like:  
+  Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
+  and published medicine access [@luna-infomed] and are presented via blog post and internal 
+  interactive documentation via Grafoscopio notebooks.
+  The classes in the package and their documentation show several levels of maturity from pretty mature 
+  (Panama Papers) to early coder practices (Infomed) and are offered as examples and excersises to learners in our
+  recurrent Dataviz workshop+hackathon, for code testing and refactoring.
+  
+  %embed HTML screenshot
+  %embed LaTeX screenshot
+
+  # References
+',
+											#children : OrderedCollection [
+												GrafoscopioNode {
+													#header : '%embed HTML screenshot',
+													#body : '',
+													#children : OrderedCollection [ ],
+													#parent : @31,
+													#level : 3,
+													#links : OrderedCollection [
+														''
+													]
+												},
+												GrafoscopioNode {
+													#header : '%embed LaTeX screenshot',
+													#body : '',
+													#children : OrderedCollection [ ],
+													#parent : @31,
+													#level : 3,
+													#links : OrderedCollection [
+														''
+													]
+												}
+											],
+											#parent : @25,
+											#level : 2,
+											#nodesInPreorder : OrderedCollection [
+												@31,
+												@33,
+												@36
+											],
+											#links : OrderedCollection [
+												'',
+												'Packages/Dataviz/JOSS/paper.md',
+												'JOSS/paper.md'
+											]
+										}
+									],
+									#parent : GrafoscopioNode {
+										#header : 'Arbol principal',
+										#body : '',
+										#children : OrderedCollection [
+											GrafoscopioNode {
+												#header : '%invisible introduction',
+												#body : 'This notebook serves as an entry point for the Grafoscopio repository.
+It documents Grafoscopio and Dataviz projects/packages.
+It generates several exported subtrees that are documents in such shared repository
+for both projects documentation.',
+												#children : OrderedCollection [ ],
+												#parent : @41,
+												#level : 1,
+												#links : OrderedCollection [
+													''
+												]
+											},
+											GrafoscopioNode {
+												#header : '%idea Intro repo file',
+												#body : '# Welcome to our repository
+
+You are visiting our documentation source code and issues repository for the Grafoscopio project.
+[Grafoscopio][grafoscopio-en] a moldable tool for literate computing and reproducible
+research developed on [Pharo][pharo] live coding and computing integrated environment, 
+in the context of a PhD research in a hacker space of the Global South ([HackBo][hackbo] 
+in Bogotá, Colombia), that is being actively used, developed and documented.
+
+You can use the top bar to browse this repository or use these quick entry points:
+
+  - [JOSS][joss] papers will give you a quick scholar view for the software: 
+    abstract and metatada and links and to dig deeper.
+    - Grafoscopio paper: 
+      [[source](./Docs/En/Papers/JOSS/Grafoscopio/paper.md)] | 
+      [[LaTeX](./Docs/En/Papers/JOSS/Grafoscopio/paper.tex)] | 
+      [[PDF](./Docs/En/Papers/JOSS/Grafoscopio/paper.pdf)].
+    - Dataviz package paper: 
+      [[source](./Docs/En/Papers/JOSS/Dataviz/paper.md)] | 
+      [[LaTeX](./Docs/En/Papers/JOSS/Dataviz/paper.tex)] | 
+      [[PDF](./Docs/En/Papers/JOSS/Dataviz/paper.pdf)].
+  - The [readme](./readme.html) file for Grafoscopio for a quick oveview and start.
+  - The [complete manual](./Docs/En/Books/Manual/manual.pdf) for detailed instructions.
+  - The [Spanish Wiki](wiki?name=inicio).
+  - The [source code repository][grafoscopio-sthub] on SmalltalkHub.
+
+',
+												#children : OrderedCollection [
+													GrafoscopioNode {
+														#header : '%idea Grafoscopio screenshot',
+														#body : '<figure><a href="./Docs/Imagenes/side-by-side.png">
+    <img
+\tsrc="./Docs/Imagenes/side-by-side.png"
+\tstyle="width:85%"
+\talt="Grafoscopio environment and a final generated pdf, side by side."
+    >
+  </a>
+  <figcaption><small><b>^Up |</b> 
+       Grafoscopio environment and the final pdf, side by side.
+       </small> 
+    </figcaption>
+<figure>',
+														#children : OrderedCollection [ ],
+														#parent : @46,
+														#level : 2,
+														#links : OrderedCollection [
+															''
+														]
+													},
+													GrafoscopioNode {
+														#header : '%idea external links',
+														#body : '[agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html
+[beaker]: http://beakernotebook.com/
+[bibtex]: https://en.wikipedia.org/wiki/BibTeX
+[chocolatey]: https://chocolatey.org/
+[citezen]: http://people.untyped.org/damien.pollet/software/citezen/
+[d3js]: https://d3js.org/
+[dataweek]: http://mutabit.com/dataweek/
+[etherpad]: https://en.wikipedia.org/wiki/Etherpad
+[flare]: http://flare.prefuse.org/
+[floor-function]: https://en.wikipedia.org/wiki/Floor_and_ceiling_functions
+[fuel]: http://rmod.inria.fr/web/software/Fuel
+[fossil]: http://fossil-scm.org/
+[joss]: http://joss.theoj.org/
+[grafoscopio-en]: http://mutabit.com/grafoscopio/index.en.html
+[grafoscopio-fossil]: http://mutabit.com/repos.fossil/grafoscopio/
+[grafoscopio-tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket
+[grafoscopio-tickets-current]: http://mutabit.com/repos.fossil/grafoscopio/rptview?rn=1
+[grafoscopio-sthub]: http://smalltalkhub.com/#!/~Offray/Grafoscopio
+[git]: https://en.wikipedia.org/wiki/Git
+[github]: https://en.wikipedia.org/wiki/GitHub
+[gogs]: https://gogs.io/
+[gt-tools]: http://gtoolkit.org/
+[hackbo]: http://hackbo.co/
+[json]: http://en.wikipedia.org/wiki/JavaScript_Object_Notation
+[jupyter]: http://jupyter.org/
+[jupyterlab]: http://jupyterlab.github.io/jupyterlab/
+[latex]: https://en.wikipedia.org/wiki/LaTeX
+[leo]: http://leoeditor.com
+[light-markup-languages]: https://en.wikipedia.org/wiki/Light_markup_language
+[manual-tip]: http://mutabit.com/repos.fossil/grafoscopio/dir?tip&name=Docs/En/Books/Manual
+[markdown]: http://pandoc.org/MANUAL.html#pandocs-markdown
+[mooc]: https://siemenbaader.github.io/PharoMooc-website/
+[mooc-spotter1]: http://rmod-pharo-mooc.lille.inria.fr/MOOC/Videos/W3/C019-Videos-Spotter1-BrowsingAClassWithSpotter-V2-HD_720p_4Mbs.m4v
+[mooc-spotter2]: http://rmod-pharo-mooc.lille.inria.fr/MOOC/Videos/W3/C019-Videos-Spotter2-Categories-V2-HD_720p_4Mbs.m4v
+[mooc-w3-14]: http://amara.org/en/videos/04UWGMwnrdXz/info/rmod-pharo-mooclilleinriafrc019-videos-redo-dsl-hd_720p_4mbsm4v/
+[neojson]: https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/NeoJSON/NeoJSON.html
+[nix]: http://nixos.org/nix/
+[nosql]: https://en.wikipedia.org/wiki/NoSQL
+[nteract]: https://nteract.io/
+[oop-pharo-2017]: https://ci.inria.fr/pharo-contribution/view/Books/job/LearningObjectOrientedProgramming/98/artifact/book.pdf
+[org-mode]: http://orgmode.org/
+[pastebin]: https://en.wikipedia.org/wiki/Pastebin
+[pandoc]: http://pandoc.org/
+[pharo]: http://pharo.org/
+[pharo-download]: http://pharo.org/download
+[pollen]: http://docs.racket-lang.org/pollen/
+[processing]: https://processing.org/
+[raphaeljs]: https://dmitrybaranovskiy.github.io/raphael/
+[roassal]: http://agilevisualization.com/
+[rolling-release]: https://en.wikipedia.org/wiki/Rolling_release
+[spec]: http://files.pharo.org/books/spec-tutorial/
+[spotter]: http://gtoolkit.org/#spotter
+[sqlite]: http://sqlite.org/
+[ston]: https://github.com/svenvc/ston/blob/master/ston-paper.md
+[texmacs]: http://texmacs.org/
+[udbc]: http://www.smalltalkhub.com/#!/~TorstenBergmann/UDBC 
+[zeppling]: http://zeppelin-project.org/
+[zotero]: https://www.zotero.org/
+[zotero-manual]: https://www.zotero.org/groups/diseo_y_creacion_phd_msc_universidad_de_caldas/items/collectionKey/PHGTCZVT',
+														#children : @16,
+														#parent : @46,
+														#level : 2,
+														#nodesInPreorder : OrderedCollection [
+															@51
+														],
+														#links : @18
+													}
+												],
+												#parent : @41,
+												#level : 1,
+												#nodesInPreorder : OrderedCollection [
+													@46,
+													@48,
+													@51
+												],
+												#links : OrderedCollection [
+													'',
+													'intro.md'
+												]
+											},
+											GrafoscopioNode {
+												#header : 'Grafoscopio',
+												#body : '',
+												#children : OrderedCollection [
+													GrafoscopioNode {
+														#header : 'Readme ',
+														#body : 'This `readme` file introduces Grafoscopio in a quick way, to have a panoramic
+view of it and having it working easily.
+It is a edited shorter version of the [full user manual][full-manual], please refer to
+it for detailed documentation.',
+														#children : OrderedCollection [
+															GrafoscopioNode {
+																#header : 'Overview',
+																#body : '',
+																#children : OrderedCollection [
+																	GrafoscopioNode {
+																		#header : 'This tool and you',
+																		#body : '',
+																		#children : OrderedCollection [
+																			GrafoscopioNode {
+																				#header : '%idea For what',
+																				#body : 'Grafoscopio is a moldable tool for literate computing and reproducible
+research developed on [Pharo][pharo] live coding and computing integrated environment, 
+in the context of a PhD research in a hacker space of the Global South ([HackBo][hackbo] 
+in Bogotá, Colombia), that is being actively used, developed and documented.
+We will expand on the points of the previous definition.
+
+  - Being moldable [@moldable-debugger-2014] means that is easy to adapt the tool to several problems,
+    which follows the opposite popular path of trying to force several problems into a predefined tool.
+    Tools change us. So we need to change them back to express our concerns and to help us 
+    in dealing with complex issues and problems in a flexible way.
+  - Literate computing [@literate-computing-2015] is a way  of intertwining prose, code, data 
+    and visualizations to make data based storytelling, experimentation, exploration and 
+    documentation in diverse broad fields like academia, journalism, research and (h)ac(k)tivism.
+    Grafoscopio allows the creation of literate computing structured interactive notebooks, that 
+    take the form of a tree-like programmable document.
+  - Research claims and findings and supporting data and visualizations can be integrated in 
+    interactive notebooks with historic traceability, allowing reproducible research.
+  - Because of the continuity and uniformity of the Pharo environment [@pbe-2016], Grafoscopio blurs 
+    the distinction between code, data, document, application and IDE [^ide] and tries to blur 
+    also the distinction between interactive documents authors and software developers. 
+  - From the particular context where is being developed (HackBo hackerspace and a PhD research on
+    Design and Creation), Grafoscopio is concived as a empowering simple and self contained *pocket
+    infrastructure* (that work off-line/on-line  from USB thumb drives and/or low resources machines 
+    [@luna-grafoscopio-2014]), wich states a critical approach to exclusionary ideas about data, coding, 
+    research, and their practicioners, places, and supporting tools and infrastructures.
+    In the [Grafoscopio web page][grafoscopio-en], we showcase several projects aligned with such
+    critical approach and the idea that technology is mostly not neutral, wich is also reflected in some parts
+    of this text and in the fact that we\'re opinionated about technology and its uses.
+    I hope you find our technology and themes choices empowering and reavealing of alternatives.
+
+  [^ide]: IDE: Integrated software Development Environment
+',
+																				#children : OrderedCollection [
+																					GrafoscopioNode {
+																						#header : '%invisible What is Grafoscopio? Alternative definitions',
+																						#body : '',
+																						#children : OrderedCollection [
+																							GrafoscopioNode {
+																								#header : 'From the web site',
+																								#body : 'Grafoscopio is a moldable tool for interactive documentation, exploratory computing, agile data visualization,
+and reproducible research, that is being used in several fields: citizen, garage & open science, (h)ac(k)tivism, open & community innovation, domain specific visualization and data journalism, and has a lot of other potential uses. 
+
+Grafoscopio is covered by a Free Libre Open Source Software license (MIT) and it has an associated hackathon/workshop, called the Data Week, oriented to citizen concerns, which are related and mediated by data and visualization. There we learn, adapt and feedback this tool.
+Grafoscopio is and integrates simple and self-cointained "pocket infractures", that can be execute On/Off-line, from a USB thumb drive, a rasperry-Pi alike computer, a modest server or any hardware in between and beyond. ',
+																								#children : OrderedCollection [ ],
+																								#parent : @65,
+																								#level : 3,
+																								#links : OrderedCollection [
+																									''
+																								]
+																							},
+																							GrafoscopioNode {
+																								#header : 'From the JOSS article',
+																								#body : '[Literate computing] [@perez&granger-2015] is a way of intertwining prose, code data and visualizations
+to make data based storytelling, experimentation, exploration and documentation in diverse broad fields like academia, journalism, research and (h)ac(k)tivism.
+Grafoscopio is moldable tool [@girba_scg:_2014] for literate computing
+and reproducible research, and 
+
+agile data visualizations [@bergel-2015], 
+in a tree-like interactive document metaphor, 
+
+developed on the [Pharo][pharo] live coding and computing integrated environment. 
+Because of the continuity and uniformity of this environment, Grafoscopio blurs 
+the distinction between code, data, document, application and IDE and tries to 
+blur the distinction between interactive documents authors and software developers 
+[@luna-2017]. 
+
+Grafoscopio has been developed in the context of a PhD research in a hackerspace of 
+the Global South ([HackBo][hackbo] in Bogotá, Colombia) and from this particular context was
+concived as a empowering, simple, flexible and self contained *pocket infrastructure* 
+(that works off-line/on-line from USB thumb drives and/or low resources machines [@luna2014]).
+',
+																								#children : OrderedCollection [ ],
+																								#parent : @65,
+																								#level : 3,
+																								#links : OrderedCollection [
+																									''
+																								]
+																							},
+																							GrafoscopioNode {
+																								#header : 'From GSoC',
+																								#body : 'Literate computing is a way of mixing text, code, data and visualizations for making data based storytelling, experimentation, exploration and documentation in diverse broad fields like academia, journalism, research and activism, or Pharo specific themes (for Roasall, Polymath etc). Grafoscopio is a tool that brings literate computing to the Pharo environment by allowing the creation of structured interactive notebooks in a tree-like programmable document metaphor.',
+																								#children : OrderedCollection [ ],
+																								#parent : @65,
+																								#level : 3,
+																								#links : OrderedCollection [
+																									''
+																								]
+																							}
+																						],
+																						#parent : @63,
+																						#level : 3,
+																						#links : OrderedCollection [
+																							''
+																						]
+																					}
+																				],
+																				#parent : @61,
+																				#level : 3,
+																				#links : OrderedCollection [
+																					''
+																				]
+																			},
+																			GrafoscopioNode {
+																				#header : '%idea from whom',
+																				#body : 'Grafoscopio is intended to be used by learners and researchers in several fields: 
+academia, journalism, activism, hacktivism and for anyone interested in open reproducible 
+research and data storytelling backed by data and agile visualizations [@bergel_agile_2016].
+This document assumes that you are such person. 
+We will introduce the general features of Grafoscopio and point to several external and internal 
+resources to complete your panoramic view of the ecosystem that let you deep your knowledge.
+
+We included introductory resources to learn Pharo and data visualization, 
+processing and storage related technologies (see the `Help` menu), and 
+the [Grafoscopio web page][grafoscopio-en] (see figure \\ref{fig:web-page-en}) shows several 
+examples of how to use them for specific projects: 
+Panama Papers as reproducible research; open community innovation in access to medicine 
+information; Twitter data selfies; specific domain visualizations for medicine information; 
+open, garage and citizen science and research.
+*This whole manual was also created using Grafoscopio* and is also an example of the type 
+of documents you can create with this tool.
+We hope to inspire you to create and publish your own projects.
+
+This document, by not trying to be comprenhensive, is a first invitation to know the 
+Grafoscopio environment and to deep your knowledge with the use of it and other related resources.
+You will see that, despite of being a manual, it includes pretty practical examples and invitations.
+That is because I think that learning something new is more like reading a map
+that reading a manual: you make first a panoramic view of where you are and
+where you want to be, and take a practical approach to making your tasks and
+reaching your destination.
+
+No prior knowledge of programming is supposed to follow this manual.
+
+![ Detail for the Grafoscopio [English web page][grafoscopio-en]. ](../../../Imagenes/grafoscopio-webpage-en.png){#fig:web-page-en}',
+																				#children : OrderedCollection [ ],
+																				#parent : @61,
+																				#level : 3,
+																				#links : OrderedCollection [
+																					''
+																				]
+																			},
+																			GrafoscopioNode {
+																				#header : '%idea TBD',
+																				#body : '**Important note** `>` *A prototype pointing to future possibilites* | 
+Despite of being pretty usable, you will see that Grafoscopio is not totally finished,
+and this shows in a few spots of the Graphical User Interface (GUI) that "point to the future", towards
+funtionality still to be implemented.
+It\'s an unusual approach, but I think that is important to convey some sense of possibility,
+and work to be done in the GUI, instead of a fully polished "product" or a GUI that hides what is not ready.
+This conviction comes from the [hackathons and workshops][dataweek] where we worked and evolved 
+Grafoscopio, while the workshop was happening(!), thanks to the dynamic, moldable and continuous nature 
+of the Pharo live coding environment.
+Blurring the distinction between interactive documents authors and software developers, means to put
+the whole environment at their dispossal, and to show the community that they can be part of this 
+future possibilities, and that is why we take this unusual approach to GUI.
+
+Where the GUI is more a remainder for the future, I will point that using the **TBD** remark (for To Be Done).',
+																				#children : OrderedCollection [ ],
+																				#parent : @61,
+																				#level : 3,
+																				#links : OrderedCollection [
+																					''
+																				]
+																			}
+																		],
+																		#parent : GrafoscopioNode {
+																			#header : 'Grafoscopio for what and for whom?',
+																			#body : Text {
+																				#string : '',
+																				#runs : RunArray {
+																					#runs : [ ],
+																					#values : [ ]
+																				}
+																			},
+																			#children : @60,
+																			#level : 1,
+																			#links : OrderedCollection [
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				''
+																			]
+																		},
+																		#level : 2,
+																		#links : OrderedCollection [
+																			''
+																		]
+																	},
+																	GrafoscopioNode {
+																		#header : 'Place in the ecosystem',
+																		#body : '',
+																		#children : OrderedCollection [
+																			GrafoscopioNode {
+																				#header : 'Similar tools',
+																				#body : 'Grafoscopio is similar to other tools and has been inspired by many
+of them, while is trying to bring also new possibilities, by combining
+different ideas, diverging from others, puting "parallel" ideas into
+dialog and, hopefully, bringing new ones. 
+Here we talk about the similarities and differences with other tools.
+
+  - Like [Jupyter][jupyter],  or [Zeppling][zeppling], [Beaker][beaker] 
+    or [nteract][nteract], Grafoscopio provides interactive notebook functionality, 
+    but it is focused only on Pharo code right now, instead of being a 
+    "language neutral" notebook (but this could be a feature for the future).
+    Grafoscopio is a multiplatform (Mac, Windows, Gnu/Linux) desktop 
+    application (like nteract, or Electron Beaker),  instead of a web one 
+    (like Jupyter, Zepelling or Beaker), providing a simple, extensible, 
+    powerful, self-contained and portable environment for interactive computing, 
+    (as said it can run from a USB thumb drive, modest computers
+    and anything in between and beyond).
+  - Grafoscopio organizes documents in a tree like metaphor, also called the *outline*, or the 
+    notebook, that is interactive and programmable, like [Org Mode][org-mode], [Leo Editor][leo], 
+    [TeXmacs][texmacs] or [Pollen][pollen] and share with them the idea that the 
+    "document is the program"[^book-program] (or a programable container 
+    of small  chunks of programs and scripts).
+    Also, the document author, can define custom tags that can be used to traverse the 
+    document tree and produce multiple customized views and outputs from a single document.
+    A single notebook can contain short or book size interactive documents
+    (this full manual is in a single Grafoscopio notebook). 
+  - Like [Jupyter Lab][jupyterlab], Grafoscopio environment supports needs beyond the notebook. 
+    Grafoscopio achieves this by leveraging the advantange of the extensible Pharo computing 
+    environment and ecosystem, where it inhabits, with powerful tools for several computing taks, beyond
+    and complementary to interactive documentation and reproducible research: GUI bulding, data processing 
+    and visualization, unit testing, code repositories and source management, among others. 
+  - Grafoscopio uses the [Roassal agile visualization engine][roassal], to build interactive 
+    visualizations and export them to the web.
+    Roassal provides similar functionality to other visualization engines and toolkits like [d3.js][d3js], 
+    [RaphaelJS][raphaeljs], [Processing][processing] or [Flare][flare], but, by being part of the Pharo 
+    live coding  environment, it invites to a more explorative and dynamic building of visualizations in 
+    an agile way.
+  -  At the moment, notebook sharing and collaboration and print (PDF) and web (HTML) publishing 
+    are supported, but in the future we hope to provide advanced interactive notebook publishing 
+    features in a distributed p2p fashion (see next section for the techologies that enable this).
+',
+																				#children : OrderedCollection [
+																					GrafoscopioNode {
+																						#header : '%footnote book-program',
+																						#body : 'The idea of the "document is a program" is a paraphrasis of "the book is a program",
+stated in the Pollen documentation, which is a short phrase to express a powerful idea
+about burring the disctinction between the document and the program, that is present 
+in several programs, like TeXmacs, Leo, Org Mode, and, of course, Grafoscopio.',
+																						#children : OrderedCollection [ ],
+																						#parent : @93,
+																						#level : 4,
+																						#links : OrderedCollection [
+																							''
+																						]
+																					}
+																				],
+																				#parent : @91,
+																				#level : 3,
+																				#links : OrderedCollection [
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					''
+																				]
+																			},
+																			GrafoscopioNode {
+																				#header : 'Technologies behind',
+																				#body : 'Grafoscopio tries to become a simple, understandable, moldable, 
+versatile and flexible tool thanks to the power of [Pharo][pharo] 
+environment and ecosystem and the combination with mature external 
+and internal frameworks and tools. It uses: 
+
+  -  Internal tools and frameworks:
+    - [GT Tools][gt-tools] and [Spec][spec] for embeddable code playgrounds, GUI and interactive 
+      notebook nodes.
+    - [Roassal][roassal] for data visualization.
+    - [STON][ston] for a light data storage and a human friendly notebooks format.
+    - [NeoJSON][neojson] for interacting with structured hierarchical [JSON][json] data.
+    - [Citezen][citezen]: for reading and exporting bibliographies to the [BibTeX][bibtex] format.
+    - [Fuel][fuel]: For medium data storage and objects serialization.
+    - [UDBC][udbc]: For connection and management of external data bases.
+  - External tools and frameworks:
+    - [Fossil SCM][fossil] for collaboration, publication and traceability of the documents history 
+      (including this very manual).
+    - [Pandoc][pandoc] for exporting to printing (PDF) and web (HTML) formats.
+    - [SQLite][sqlite] for storage and management of tabular data, for the `Dataviz` companion package.
+
+Despite of trying to provide a friendly, cohesive and empowering user experience (UX) by
+integrating default external minimalist and/or self-contained tools into the data exploration 
+and document publishing workflow, other external tools could be integrated ([Git][git], 
+more data bases, including [NoSQL][nosql], other exporters and 
+[light markup languages][light-markup-languages] and so on). 
+
+',
+																				#children : OrderedCollection [ ],
+																				#parent : @91,
+																				#level : 3,
+																				#links : OrderedCollection [
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					'',
+																					''
+																				]
+																			}
+																		],
+																		#parent : @84,
+																		#level : 2,
+																		#links : OrderedCollection [
+																			'',
+																			'',
+																			'',
+																			''
+																		]
+																	}
+																],
+																#parent : @57,
+																#level : 2,
+																#nodesInPreorder : OrderedCollection [
+																	@59,
+																	@61,
+																	@63,
+																	@65,
+																	@67,
+																	@70,
+																	@73,
+																	@78,
+																	@81,
+																	@91,
+																	@93,
+																	@95,
+																	@99
+																],
+																#links : @89
+															},
+															GrafoscopioNode {
+																#header : 'Installation instructions',
+																#body : 'If you want to install Grafoscopio on Pharo 5, there are two ways of doing:
+via the Pharo catalog or via running a script from the playground.
+Both suppose that you have already installed and running Pharo for your platform
+(Windows, Gnu/Linux or Mac) from its [download page][pharo-download],
+and will be explained below, from the easiest one to the far easy ones.
+Also both of them use the Monticello package manager, so dependencies are
+managed automatically for you, making the procedures really short, even for
+the script based one.
+
+Different install procedures suit different tastes and needs and bring alternatives,
+so, if one doesn\'t work for you or your need/taste, you can try others, or just
+leave it like that, if your chosen method worked.
+
+',
+																#children : OrderedCollection [
+																	GrafoscopioNode {
+																		#header : 'Install from the Pharo catalog',
+																		#body : 'To install Grafoscopio, from Internet in Pharo 5, follow this steps:
+
+1. Open the spotter (`Shift` + `Enter`) and start to write the first letters of "Grafoscopio" (without the quotes).
+  The spoter will show that it is available in the projects Catalog as shown in the figure \\ref{fig:install-screen1}.
+
+  ![ Install screen 1 | Finding Grafoscopio in the projects Catalog. ](../../../Imagenes/Install/spotter-grafos-first-launch.png){#fig:install-screen1}
+
+2. Click with the mouse or move with the keyboard to select the "Grafoscopio" package showed.
+    A install question as the following will be shown (see figure \\ref{fig:install-screen2} ). 
+    Select "Yes" to start the installation process.
+
+  ![ Install screen 2 | Install question. ](../../../Imagenes/Install/install-question.png){#fig:install-screen2 width="50%"}
+
+3. While the installation is running, some progress bars with package names are going to be showed
+  (see figure \\ref{fig:install-screen3}):
+
+ ![ Install screen 3 | Installation progress bars. ](../../../Imagenes/Install/progress-bar.png){#fig:install-screen3}
+
+4. When the installation ends we will see two indicators (as shown in figure \\ref{fig:install-screen4}):
+  - Messages in the lower left corner telling that installation is complete and documentation is installed.
+  - A tool bar in the upper side of the Pharo window, called the docking bar.
+
+  ![ Install screen 4 | Installation ended. ](../../../Imagenes/Install/install-ended.png){#fig:install-screen4}
+
+5. Once we have Grafoscopio installed, we save modifications to our computing environment, by making 
+  click in any clean part of the GUI (not occupied by any window) to deploy the *World Menu*.
+  There we choose `Save`, to save the system with the same name, or `Save as` to save it with a new one
+  (see figure \\ref{fig:install-screen5}).
+
+  ![ Install screen 5 | Saving changes via the World Menu. ](../../../Imagenes/Install/save-menu.png){#fig:install-screen5 width="50%"}',
+																		#children : OrderedCollection [ ],
+																		#parent : GrafoscopioNode {
+																			#header : 'Installation instructions',
+																			#body : Text {
+																				#string : 'If you want to install Grafoscopio on Pharo 5, there are two ways of doing:
+via the Pharo catalog or via running a script from the playground.
+Both suppose that you have already installed and running Pharo for your platform
+(Windows, Gnu/Linux or Mac) from its [download page][pharo-download],
+and will be explained below, from the easiest one to the far easy ones.
+
+Different install procedures suit different tastes and needs and bring alternatives,
+so, if one doesn\'t work for you or your need/taste, you can try others, or just
+leave it like that, if your chosen method worked.
+
+',
+																				#runs : RunArray {
+																					#runs : [
+																						593
+																					],
+																					#values : [
+																						[ ]
+																					],
+																					#lastIndex : 592,
+																					#lastRun : 1,
+																					#lastOffset : 591
+																				}
+																			},
+																			#children : @105,
+																			#level : 1,
+																			#links : OrderedCollection [
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				''
+																			]
+																		},
+																		#level : 2,
+																		#links : OrderedCollection [
+																			''
+																		]
+																	},
+																	GrafoscopioNode {
+																		#header : 'Install from a script',
+																		#body : 'There are two ways of running scripts in the Pharo environment:
+one by importing them from Internet and the other by writing them
+manually.
+
+If you want to run a Pharo script from its web address, open the spotter
+(`Shift + Enter`) and paste the address and then press `Enter` to open
+the interactive *playground* and finally press the `Do it and go` green play 
+button or its shorcut (`Ctrl + Shift + g`). 
+(An empty *playground*  and its play button are showed in  figure
+\\ref{fig:empty-playground})
+
+![ Empty *playground* and its play button. ](../../../Imagenes/Install/empty-playground-1.png){#fig:empty-playground}',
+																		#children : OrderedCollection [
+																			GrafoscopioNode {
+																				#header : '%idea in two steps',
+																				#body : 'For example, if you want to run the first part of the install script, open the
+spotter and paste this address <http://ws.stfx.eu/BMWZPUY38BSF>.
+You will see a screenshot similar to figure \\ref{fig:install-script-part1},
+showing the web address you have pasted and the first lines of the script
+below, marked in grey. 
+
+![ Loading the install configuration package. ](../../../Imagenes/Install/install-script-part1.png){#fig:install-script-part1} 
+
+Press `Enter` or select with the mouse the area with the grey background. 
+You will see the interactive playground with the script loaded.
+We will see more details about the playground later.
+For the moment press the play button or the shorcut (`Ctrl + Shift + g`).
+You will see that the playground has been executed.
+An executed playground contains a new column with details of the object
+resulting from that execution, as shown in figure \\ref{fig:executed-playground}.
+
+![ Executed playground. ](../../../Imagenes/Install/executed-playground.png){#fig:executed-playground} 
+
+Now repeat the procedure, opening the spotter, pasting this url <http://ws.stfx.eu/CZ87ZZ2SXCEM> 
+and executing the second part of the installation script (showed in figure \\ref{fig:install-script-part2}).
+
+![ Loading Grafoscopio. ](../../../Imagenes/Install/install-script-part2.png){#fig:install-script-part2}
+
+You will see the progress bars and the ending of the installation process,
+as described in the steps 4 to 5 of the previous section.',
+																				#children : OrderedCollection [ ],
+																				#parent : @116,
+																				#level : 3,
+																				#links : OrderedCollection [
+																					''
+																				]
+																			},
+																			GrafoscopioNode {
+																				#header : '%idea In one step',
+																				#body : 'Is usual to run the previous two steps in a single playground, by executing parts of it.
+Here we are going to show you how to do it, with the same installation example we
+have done so far.
+Open a playground (`Ctrl` + `o` + `w`) and write this (or paste the URL of 
+[this playground](http://ws.stfx.eu/D6DDTUAMWIOK), in the spotter, as before):
+
+%embed Grafoscopio single quick install script
+
+Now select with the mouse the first 5 lines of the script and make click with the 
+mouse secondary button. A contextual menu will be show near
+to the selection, as shown in the figure \\ref{fig:playground-partial-execution}.
+Choose from that menu the `Do it and go` option (or press the `Ctrl + g`  keyboard combination).
+Only the selected part of the script will be executed.
+
+![ Selecting the script part that will be executed and deploying the contextual menu. ](../../../Imagenes/Install/playground-partial-execution.png){#fig:playground-partial-execution}
+
+![ Executing the second part of the script. ](../../../Imagenes/Install/playground-partial-execution2.png){#fig:playground-partial-execution2}
+ 
+Now select the last two lines of the install script, as shown in 
+figure \\ref{fig:playground-partial-execution2} and repeat the previous procedure.
+You will see the progress bars and the ending of the installation process,
+as described in the steps 4 to 5 of the previous section.',
+																				#children : OrderedCollection [
+																					GrafoscopioNode {
+																						#header : '%embed Grafoscopio single quick install script',
+																						#body : '"Start by loading the configuration of Grafoscopio"
+  Gofer new
+    url: \'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo50/main\';
+    package: \'ConfigurationOfGrafoscopio\';
+  load.
+
+"After that load Grafoscopio"
+ConfigurationOfGrafoscopio load.
+',
+																						#tags : 'código',
+																						#children : OrderedCollection [ ],
+																						#parent : @121,
+																						#level : 4,
+																						#links : OrderedCollection [
+																							'',
+																							'',
+																							'',
+																							'',
+																							'',
+																							'',
+																							'',
+																							'http://ws.stfx.eu/D6DDTUAMWIOK'
+																						]
+																					}
+																				],
+																				#parent : @116,
+																				#level : 3,
+																				#links : OrderedCollection [
+																					''
+																				]
+																			},
+																			GrafoscopioNode {
+																				#header : '%invisible',
+																				#body : '',
+																				#children : OrderedCollection [
+																					GrafoscopioNode {
+																						#header : 'Instaliing the Grafoscopio configuration',
+																						#body : '"Start by loading the configuration of Grafoscopio"
+  Gofer new
+    url: \'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo50/main\';
+    package: \'ConfigurationOfGrafoscopio\';
+  load.
+',
+																						#tags : 'código',
+																						#children : OrderedCollection [ ],
+																						#parent : @127,
+																						#level : 4,
+																						#links : OrderedCollection [
+																							'',
+																							'http://ws.stfx.eu/BMWZPUY38BSF'
+																						]
+																					},
+																					GrafoscopioNode {
+																						#header : 'Load Grafoscopio',
+																						#body : '"After that load Grafoscopio"
+ConfigurationOfGrafoscopio load.
+',
+																						#tags : 'código',
+																						#children : OrderedCollection [ ],
+																						#parent : @127,
+																						#level : 4,
+																						#links : OrderedCollection [
+																							'',
+																							'http://ws.stfx.eu/CZ87ZZ2SXCEM'
+																						]
+																					}
+																				],
+																				#parent : @116,
+																				#level : 3,
+																				#links : OrderedCollection [
+																					''
+																				]
+																			}
+																		],
+																		#parent : @108,
+																		#level : 2,
+																		#links : OrderedCollection [
+																			''
+																		]
+																	}
+																],
+																#parent : @57,
+																#level : 2,
+																#nodesInPreorder : OrderedCollection [
+																	@104,
+																	@106,
+																	@116,
+																	@118,
+																	@121,
+																	@123,
+																	@127,
+																	@129,
+																	@132
+																],
+																#links : @114
+															},
+															GrafoscopioNode {
+																#header : 'Usage instructions',
+																#body : '',
+																#children : OrderedCollection [ ],
+																#parent : @57,
+																#level : 2,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Examples',
+																#body : 'There is a dedicated complementary package, called `Dataviz`, with examples, 
+that was build with educative purposes, for a recurrent local workshop called 
+the Data Week, where we invite a diverse community in gender, professions,
+educational and life backgrounds and is automatically installed when you
+install Grafoscopio.
+Also we have a Spanish introductory tutorial, that is directed towards beginers.
+
+To see such examples please execute this code form the *playground*:
+',
+																#children : OrderedCollection [
+																	GrafoscopioNode {
+																		#header : 'Opening tutorial',
+																		#body : '"This opens the Spanish tutorial"
+GrafoscopioNotebook new openTutorial ',
+																		#tags : 'código',
+																		#children : OrderedCollection [ ],
+																		#parent : GrafoscopioNode {
+																			#header : 'Examples',
+																			#body : Text {
+																				#string : 'There is a dedicated complementary package, called `Dataviz`, with examples, 
+that was build with educative purposes, for a recurrent local workshop called 
+the Data Week, where we invite a diverse community in gender, professions,
+educational and life backgrounds and is automatically installed when you
+install Grafoscopio.
+Also we have a Spanish introductory tutorial, that is directed towards beginers.
+
+To see such examples please execute this code form the *playground*:
+',
+																				#runs : RunArray {
+																					#runs : [
+																						485
+																					],
+																					#values : [
+																						[ ]
+																					],
+																					#lastIndex : 416,
+																					#lastRun : 1,
+																					#lastOffset : 415
+																				}
+																			},
+																			#children : @142,
+																			#level : 1,
+																			#links : OrderedCollection [
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				''
+																			]
+																		},
+																		#level : 2,
+																		#links : OrderedCollection [
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			''
+																		]
+																	},
+																	GrafoscopioNode {
+																		#header : 'Opening Dataviz documentation',
+																		#body : '"This opens the introductory notebook to the Dataviz package"
+GrafoscopioDocumentation openDatavizIntro',
+																		#tags : 'código',
+																		#children : OrderedCollection [ ],
+																		#parent : @145,
+																		#level : 2,
+																		#links : OrderedCollection [
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			''
+																		]
+																	}
+																],
+																#parent : @57,
+																#level : 2,
+																#nodesInPreorder : OrderedCollection [
+																	@141,
+																	@143,
+																	@153
+																],
+																#links : @151
+															},
+															GrafoscopioNode {
+																#header : 'API documentation',
+																#body : 'Because Grafoscopio inhabits a full live coding environment,
+it follows the custom of making the API documentation available
+inside a dynamic environment, instead in some static web page.
+To open the Grafoscopio package inside the system browser,
+and see the messages organized by protocols execute:
+',
+																#children : OrderedCollection [
+																	GrafoscopioNode {
+																		#header : 'Opening the code browser for Grafoscopio',
+																		#body : '"Browser the notebook API"
+GrafoscopioNotebook browse.
+
+"Browse the document tree API"
+GrafoscopioNode browse.',
+																		#tags : 'código',
+																		#children : OrderedCollection [ ],
+																		#parent : GrafoscopioNode {
+																			#header : 'API documentation',
+																			#body : Text {
+																				#string : 'Because Grafoscopio inhabits a full live coding environment,
+it follows the custom of making the API documentation available
+inside a dynamic environment, instead in some static web page.
+To open the Grafoscopio package inside the system browser,
+and see the messages organized by protocols execute:
+',
+																				#runs : RunArray {
+																					#runs : [
+																						305
+																					],
+																					#values : [
+																						[ ]
+																					],
+																					#lastIndex : 252,
+																					#lastRun : 1,
+																					#lastOffset : 251
+																				}
+																			},
+																			#children : @158,
+																			#level : 1,
+																			#links : OrderedCollection [
+																				'',
+																				'',
+																				'',
+																				''
+																			]
+																		},
+																		#level : 2,
+																		#links : OrderedCollection [
+																			'',
+																			'',
+																			'',
+																			'',
+																			''
+																		]
+																	}
+																],
+																#parent : @57,
+																#level : 2,
+																#nodesInPreorder : OrderedCollection [
+																	@157,
+																	@159
+																],
+																#links : @167
+															},
+															GrafoscopioNode {
+																#header : 'Tests',
+																#body : 'The core functionality of Grafoscopio document tree model is tested.
+If you want to see and run the tests, just open the tests package by
+executing:
+
+%embed Opening the tests package
+
+From there, you can use the extensive test environment provided by Pharo.
+For a short introduction to how to run test on this environment,
+I recommend to watch the [Coding a Little Domain Specific Language video ][mooc-w3-14],
+from the [Pharo MOOC][mooc].',
+																#children : OrderedCollection [
+																	GrafoscopioNode {
+																		#header : '%embed Opening the tests package',
+																		#body : 'GrafoscopioNodeTest browse',
+																		#tags : 'código',
+																		#children : OrderedCollection [ ],
+																		#parent : GrafoscopioNode {
+																			#header : 'Tests',
+																			#body : Text {
+																				#string : 'The core functionality of Grafoscopio document tree model is tested.
+If you want to see and run the tests, just open the tests package by
+executing:
+
+%embed Opening the tests package
+
+From there, you can use the extensive test environment provided by Pharo.
+For a short introduction to how to run test on this environment,
+I recommend to watch the [Coding a Little Domain Specific Language video ][mooc-w3-14],
+from the [Pharo MOOC][mooc].',
+																				#runs : RunArray {
+																					#runs : [
+																						448
+																					],
+																					#values : [
+																						[ ]
+																					],
+																					#lastIndex : 421,
+																					#lastRun : 1,
+																					#lastOffset : 420
+																				}
+																			},
+																			#children : @171,
+																			#level : 1,
+																			#links : OrderedCollection [
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				''
+																			]
+																		},
+																		#level : 2,
+																		#links : OrderedCollection [
+																			'',
+																			'',
+																			'',
+																			'',
+																			''
+																		]
+																	}
+																],
+																#parent : @57,
+																#level : 2,
+																#nodesInPreorder : OrderedCollection [
+																	@170,
+																	@172
+																],
+																#links : @180
+															},
+															GrafoscopioNode {
+																#header : 'Community Guidelines',
+																#body : '',
+																#children : OrderedCollection [
+																	GrafoscopioNode {
+																		#header : 'Seek support',
+																		#body : 'Grafoscopio has a small and new born community.
+You can reach it by following the contact links
+in the Grafoscopio page in 
+[Spanish](http://mutabit.com/grafoscopio/)
+or in [English](http://mutabit.com/grafoscopio/index.en.html).
+
+Also you can discuss issues related with Grafoscopio in the
+[Pharo users community](http://pharo.org/community) 
+mailing list.
+We are in such list and try to be active participants there
+and bridge the local Spanish community with the international
+one.',
+																		#children : OrderedCollection [ ],
+																		#parent : GrafoscopioNode {
+																			#header : 'Community Guidelines',
+																			#body : Text {
+																				#string : '',
+																				#runs : RunArray {
+																					#runs : [ ],
+																					#values : [ ]
+																				}
+																			},
+																			#children : @184,
+																			#level : 1,
+																			#links : OrderedCollection [
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				'',
+																				''
+																			]
+																		},
+																		#level : 2,
+																		#links : OrderedCollection [
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			''
+																		]
+																	},
+																	GrafoscopioNode {
+																		#header : 'Report issues or problems',
+																		#body : 'To report issues or problems with the software and/or its documentation 
+please visit our [ticket section][grafoscopio-tickets] Fossil repository.
+Before creating a new ticket, please be sure to visit the 
+[current tickets][grafoscopio-tickets-current], to see if your issue/problem has been
+not reported already.',
+																		#children : OrderedCollection [ ],
+																		#parent : @187,
+																		#level : 2,
+																		#links : OrderedCollection [
+																			'',
+																			'',
+																			'',
+																			''
+																		]
+																	},
+																	GrafoscopioNode {
+																		#header : 'Contribute to the project',
+																		#body : 'As we said, Grafoscopio wants to help in blurring the distinction
+between software developer and interactive document author,
+so we are pretty open to several ways of contribution: from
+bug reports, as explained above, to the creation of interactive
+documentation, domain specific languages (DSLs) and visualizations,
+or software functionality.
+
+Contributions usually take part on our recurrent [Data Week][dataweek] 
+hackathon/workshop and there you will learn how to use and adapt 
+the software, starting by the basics, creating DSLs and crafting
+visualizations and integrating them into interactive notebooks.
+You will also learn how to use Fossil and how to commit to our 
+shared repositories for [code][grafoscopio-sthub] and for 
+[documents and issues][grafoscopio-fossil].
+Besides this manual, we are creating also a tutorial (in Spanish) with all 
+these themes covered, as memories for us and others to remember and learn from.
+The idea, as was said before, is to have multilingual documentation with a *local
+first* approach.
+
+If you don\'t have the chance to assist to one of our face to face learning workshops
+and hackathons or to use the resulting notebooks, but still want and already know
+who to contribute, you can also ask for permisions in the respositories using any of 
+the contact methods listed above.
+We are a small, new born and friendly community with low traffic
+mail communication and can discuss about contributions on an
+individual  case by case approach, so your words, bugfix and suggestions 
+will be listened and taking into account and integrated when and where they 
+make sense.
+
+Welcome again to our community :-).',
+																		#children : OrderedCollection [ ],
+																		#parent : @187,
+																		#level : 2,
+																		#links : OrderedCollection [
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			'',
+																			''
+																		]
+																	}
+																],
+																#parent : @57,
+																#level : 2,
+																#nodesInPreorder : OrderedCollection [
+																	@183,
+																	@185,
+																	@194,
+																	@197
+																],
+																#links : @192
+															},
+															GrafoscopioNode {
+																#header : '%idea external links',
+																#body : '[agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html
+[beaker]: http://beakernotebook.com/
+[bibtex]: https://en.wikipedia.org/wiki/BibTeX
+[chocolatey]: https://chocolatey.org/
+[citezen]: http://people.untyped.org/damien.pollet/software/citezen/
+[d3js]: https://d3js.org/
+[dataweek]: http://mutabit.com/dataweek/
+[etherpad]: https://en.wikipedia.org/wiki/Etherpad
+[flare]: http://flare.prefuse.org/
+[floor-function]: https://en.wikipedia.org/wiki/Floor_and_ceiling_functions
+[fuel]: http://rmod.inria.fr/web/software/Fuel
+[fossil]: http://fossil-scm.org/
+[joss]: http://joss.theoj.org/
+[grafoscopio-en]: http://mutabit.com/grafoscopio/index.en.html
+[grafoscopio-fossil]: http://mutabit.com/repos.fossil/grafoscopio/
+[grafoscopio-tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket
+[grafoscopio-tickets-current]: http://mutabit.com/repos.fossil/grafoscopio/rptview?rn=1
+[grafoscopio-sthub]: http://smalltalkhub.com/#!/~Offray/Grafoscopio
+[git]: https://en.wikipedia.org/wiki/Git
+[github]: https://en.wikipedia.org/wiki/GitHub
+[gogs]: https://gogs.io/
+[gt-tools]: http://gtoolkit.org/
+[hackbo]: http://hackbo.co/
+[json]: http://en.wikipedia.org/wiki/JavaScript_Object_Notation
+[jupyter]: http://jupyter.org/
+[jupyterlab]: http://jupyterlab.github.io/jupyterlab/
+[latex]: https://en.wikipedia.org/wiki/LaTeX
+[leo]: http://leoeditor.com
+[light-markup-languages]: https://en.wikipedia.org/wiki/Light_markup_language
+[manual-tip]: http://mutabit.com/repos.fossil/grafoscopio/dir?tip&name=Docs/En/Books/Manual
+[markdown]: http://pandoc.org/MANUAL.html#pandocs-markdown
+[mooc]: https://siemenbaader.github.io/PharoMooc-website/
+[mooc-spotter1]: http://rmod-pharo-mooc.lille.inria.fr/MOOC/Videos/W3/C019-Videos-Spotter1-BrowsingAClassWithSpotter-V2-HD_720p_4Mbs.m4v
+[mooc-spotter2]: http://rmod-pharo-mooc.lille.inria.fr/MOOC/Videos/W3/C019-Videos-Spotter2-Categories-V2-HD_720p_4Mbs.m4v
+[mooc-w3-14]: http://amara.org/en/videos/04UWGMwnrdXz/info/rmod-pharo-mooclilleinriafrc019-videos-redo-dsl-hd_720p_4mbsm4v/
+[neojson]: https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/NeoJSON/NeoJSON.html
+[nix]: http://nixos.org/nix/
+[nosql]: https://en.wikipedia.org/wiki/NoSQL
+[nteract]: https://nteract.io/
+[oop-pharo-2017]: https://ci.inria.fr/pharo-contribution/view/Books/job/LearningObjectOrientedProgramming/98/artifact/book.pdf
+[org-mode]: http://orgmode.org/
+[pastebin]: https://en.wikipedia.org/wiki/Pastebin
+[pandoc]: http://pandoc.org/
+[pharo]: http://pharo.org/
+[pharo-download]: http://pharo.org/download
+[pollen]: http://docs.racket-lang.org/pollen/
+[processing]: https://processing.org/
+[raphaeljs]: https://dmitrybaranovskiy.github.io/raphael/
+[roassal]: http://agilevisualization.com/
+[rolling-release]: https://en.wikipedia.org/wiki/Rolling_release
+[spec]: http://files.pharo.org/books/spec-tutorial/
+[spotter]: http://gtoolkit.org/#spotter
+[sqlite]: http://sqlite.org/
+[ston]: https://github.com/svenvc/ston/blob/master/ston-paper.md
+[texmacs]: http://texmacs.org/
+[udbc]: http://www.smalltalkhub.com/#!/~TorstenBergmann/UDBC 
+[zeppling]: http://zeppelin-project.org/
+[zotero]: https://www.zotero.org/
+[zotero-manual]: https://www.zotero.org/groups/diseo_y_creacion_phd_msc_universidad_de_caldas/items/collectionKey/PHGTCZVT',
+																#children : @16,
+																#parent : @57,
+																#level : 2,
+																#nodesInPreorder : OrderedCollection [
+																	@201
+																],
+																#links : @18
+															},
+															GrafoscopioNode {
+																#header : 'Licenses',
+																#body : 'Grafoscopio and its tutorial is licensed under MIT license and the readme and the user 
+manual is licensed under a modified P2P license.
+To see a full copy of such respective licenses, please visit the files under this repository:
+
+  - ./Docs/En/Licenses/grafoscopio-mit.md
+  - ./Docs/En/Licenses/documents-p2p-ismb.md
+
+',
+																#children : OrderedCollection [ ],
+																#parent : @57,
+																#level : 2,
+																#links : OrderedCollection [
+																	''
+																]
+															}
+														],
+														#parent : @55,
+														#level : 2,
+														#nodesInPreorder : OrderedCollection [
+															@57,
+															@59,
+															@61,
+															@63,
+															@65,
+															@67,
+															@70,
+															@73,
+															@78,
+															@81,
+															@91,
+															@93,
+															@95,
+															@99,
+															@104,
+															@106,
+															@116,
+															@118,
+															@121,
+															@123,
+															@127,
+															@129,
+															@132,
+															@138,
+															@141,
+															@143,
+															@153,
+															@157,
+															@159,
+															@170,
+															@172,
+															@183,
+															@185,
+															@194,
+															@197,
+															@201,
+															@203
+														],
+														#links : OrderedCollection [
+															'',
+															'./readme.markdown',
+															'readme.markdown'
+														]
+													},
+													GrafoscopioNode {
+														#header : '%idea JOSS paper',
+														#body : '  ---
+  title: \'Grafoscopio: A moldable tool for literate computing and reproducible research\'
+  tags:
+    - literate computing
+    - reproducible research
+    - data visualization
+    - agile visualization
+    - data activism
+    - pocket infrastructures
+    - moldable tools
+    - civil tech
+  authors:
+   - name: Offray Vladimir Luna Cárdenas
+     orcid: 0000-0002-4640-6984
+     affiliation: 1
+     affiliation: 2
+     affiliation: 3
+  affiliations:
+   - name: HackBo: a hackerspace in Bogotá
+     index: 1
+   - name: mutabiT
+     index: 2
+  - name: University of Caldas
+     index: 3
+  date: 29 March 2017
+  bibliography: paper.bib
+  ---
+
+  # Summary
+
+  Grafoscopio [@luna-grafoscopio-2014] is a moldable [@moldable-debugger-2014] tool 
+  to make reproducible research and literate computing [@literate-computing-2015],
+  developed on Pharo [@pbe-2016] live coding and computing integrated environment,
+  which allow authors to intertwin prose, code, data and 
+  agile visualizations into storytelling, and readers and coauthors can verify, collaborate 
+  on and extend the document claims and artifacts.
+  Grafoscopio is and integrates simple and self-cointained "pocket infractures", that can   
+  be execute On/Off-line, from a USB thumb drive, a rasperry-Pi alike computer, a modest 
+  server or any hardware in between and beyond and tries to blur binary constructs like
+  author / lector, developer / user, document / data, binary aplication / source code, and
+  has an associated permanent workshop+hackathon, called the Data Week, where
+  diverse participants learn, extend and modify Grafoscopio, while dealing with civic 
+  issues that can be understood and expressed better using the techniques provided by
+  literate computing and reproducible research.
+  
+  %embed HTML screenshot
+  %embed LaTeX screenshot
+
+  # References
+',
+														#children : OrderedCollection [
+															GrafoscopioNode {
+																#header : '%embed HTML screenshot',
+																#body : '<figure><a href="../../../../Imagenes/side-by-side.png">
+    <img
+\tsrc="../../../../Imagenes/side-by-side.png"
+\tstyle="width:85%"
+\talt="Grafoscopio environment and a final generated pdf, side by side."
+    >
+  </a>
+  <figcaption><small><b>^Up |</b> 
+       Grafoscopio environment and the final pdf, side by side.
+       </small> 
+    </figcaption>
+  <figure>',
+																#children : @49,
+																#parent : @208,
+																#level : 3,
+																#nodesInPreorder : OrderedCollection [
+																	@210
+																],
+																#links : @50
+															},
+															GrafoscopioNode {
+																#header : '%embed LaTeX screenshot',
+																#body : '\\includegraphics{../../../../Imagenes/side-by-side.png}',
+																#children : OrderedCollection [ ],
+																#parent : @208,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															}
+														],
+														#parent : @55,
+														#level : 2,
+														#nodesInPreorder : OrderedCollection [
+															@208,
+															@210,
+															@212
+														],
+														#links : OrderedCollection [
+															'',
+															'/Docs/En/Papers/JOSS/Grafoscopio/paper.md',
+															'Docs/En/Papers/JOSS/Grafoscopio/paper.md',
+															'Docs/En/Papers/JOSS/Dataviz/paper.md',
+															'Docs/En/Papers/JOSS/paper.md'
+														]
+													}
+												],
+												#parent : @41,
+												#level : 1,
+												#links : OrderedCollection [
+													''
+												]
+											},
+											@25,
+											GrafoscopioNode {
+												#header : 'Summer of Code',
+												#body : '',
+												#children : OrderedCollection [
+													GrafoscopioNode {
+														#header : 'Proposal for the 2017 Pharo Summer of Code by Offray Luna',
+														#body : '',
+														#children : OrderedCollection [
+															GrafoscopioNode {
+																#header : '%invisible metadata',
+																#body : '---
+link-citations: true
+---',
+																#children : OrderedCollection [ ],
+																#parent : @220,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Introduction',
+																#body : '<!--
+ Clearly defined problem. Current state of things. Issues you wish to solve and why. Conclude with solution.
+-->
+
+Grafoscopio is a tool for literate computing and reproducible research, for the Pharo environment, 
+that allows authors to intertwine prose, code, agile visualizations, develop domain specific languages,
+by providing an interactive notebook metaphor as an structured programable tree/outline.
+Thanks to preliminary integration with external tools, like Pandoc and Fossil, exporting to several formats 
+(including print/PDF and web/HTML), and historical version control and collaboration are provided.
+Because of this, Grafoscopio is interesting to a wide audience including scholars, researchers, activist,
+journalist, students, among others.
+
+A functional version of Grafoscopio is available though the Pharo Catalog, but there are still rough edges
+in User Experience (UX) and test coverage that need to be solved to make Grafoscopio
+usable on a day to day basis, particularly focusing the writing experience support for markup needs,  making it smooth, and to be,
+at least in pair with the code writing experience, provided by the Pharo interactive playground.
+The possible users for Grafoscopio are intended to deal with code. Some of the will be novice coders,
+coming from fields like journalism or activism, so the experience of working with external tools, including installation
+and configuration must be friendly to beginners, to let them focus on their main domain problems, instead of the ones of
+infrastructure and setup.
+ 
+This Summer of code proposal is intended to work on the above problems to improve user experience, external tool
+integration and test coverage.',
+																#children : OrderedCollection [ ],
+																#parent : @220,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Project goals',
+																#body : '<!--
+Format it like a list. Propose a clear list of deliverables, explaining exactly what you promise to do and what you do not plan to do. “Future developments” can be mentioned. It is better to promise less and deliver more than to promise a lot and then fall short.
+-->
+
+The project goals are:
+
+
+  - Implement a markup editor for text writing, with links browsing (via an external browser), files preview and syntax highlighting, font size 
+    change and the common features of a minimal markup editor.
+  - Improve the integration with external tools, including assisted installation via external multiplatform package manager (Nix and
+    Chocolatey for the Mac/Linux and Windows platforms, respectively).
+
+Future developments
+
+  - Implement node and notebooks transclusion (like Org Mode and Leo). 
+  - Integrate a language spell checker for text nodes.',
+																#children : OrderedCollection [ ],
+																#parent : @220,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Implementation',
+																#body : '<!--
+Longer and more detailed. Provide technical details, show that you understand the technology and illustrate key technical elements of your proposed solution.
+-->
+
+  - For improving UX writing experience a customization of the Pharo playground will be implemented, extending on what is available now using the 
+    Spec-GT bridge, to support Pandoc\'s markdown syntax with hightlighting (via SmaCC or PetitParser), web links browsing (using WebBrowser) and
+   files preview (with customized inspectors) and font size changes. 
+  - To implement external tools integration the OSUnix, OSMac and OSWindow will be used to install and use the external package managers (Nix, Chocolatey). 
+
+',
+																#children : OrderedCollection [ ],
+																#parent : @220,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Timeline',
+																#body : '<!--
+Make it weekly. Set goals for each week. Be upfront about other commitments, including exams, classes, travel, internships, jobs, etc.
+-->
+
+The granularity of the more complex project is spread in several weeks, but the advances and blocking issues will be reported to the mentor(s) weekly and
+it can be made more granular with the interaction with community during the Summer of Code and are subject to Tutors advice for modification.
+
+| Weeks |                               Goals                                                     | 
+|----------|:---------------------------------------------------------------------------------------------------------------------------------------|
+|  1 - 2       | Annotate reading of the Spec Book generating a companion notebook of the Spec Book and modified  widgets for Grafoscopio and keyboard shortcuts for notebook editing.   | 
+|   3 - 7     |  Implementing  a markup editor for markdown, for text nodes similar to the one we have now for code.  A customized playground with markdown support, web links browsing and texts and files preview.    |  
+|       8-9        |     Output storage support for playground computations (similar to OrgMode or Jupyter, including literature review).    | 
+| 10 | Nix integration to support external tools installation (Pandoc, LateX, Fossil, Sqlite) on GNU/Linux and Mac. |
+| 11 |  Chocolatey integration to support external tools installation (Pandoc, LateX, Fossil, Sqlite) on Windows. |
+| 12 | Review previous deliverable and goals and implement further development goals, if there is time. |
+
+Table:  Summer of code timeline.',
+																#children : OrderedCollection [ ],
+																#parent : @220,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Benefits to Community',
+																#body : '<!--
+Make your case a benefit to the organization.
+-->
+
+Grafoscopio has been used in several workshops+hackathon of a recurrent local event, called the Data Week (we have now 8 editions)
+that have shown how this tool can be used by a diverse variety of authors to introduce them to coding and the development of 
+Domain Specific Languages and agile visualization on differentent themes, with special support for data activism. 
+It is a way to expose the advanges of the Pharo ecosystem to this wider audience beyond the usual software developer and/or researcher,
+so a more mature and friendly Grafoscopio, that can be used to write diverse interactive documents, from note taking, to tutorials, to complete thesis, 
+can be a powerful way to spread the Pharo advantages and show them in the context of current trends of literate computing and reproducible
+research.
+This is also useful to develop computational narratives on Pharo and non Pharo related themes and frameworks.',
+																#children : OrderedCollection [ ],
+																#parent : @220,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Related Work',
+																#body : '<!--
+Research and write how the project fits into the target organization. Explain related works, similarities & differences.
+-->
+
+  - On customization of the playground to support alternative markups and custom inspector, the Moose team made some experiments [[1][custom-pillar]] 
+    [[2][custom-inspector]] using Pillar, but with other syntax and using external pillar files, instead of self contain Grafoscopio notebooks created inside the image. 
+  - On alternative interfaces that allow font increase and decrease Stephan Eggermont has made some test with his [alternative UI with coding cards][coding-cards]
+    and [keyboard driven IDE][keyboard-ide].
+  - On integration of Spec and GT Tools, Johan Fabry has worked on a [bridge][spec-gt], that is being used now in Grafoscopio.
+  - The integration with the operative system  has been working with a Graphical Torsten Berman\'s [Quick Access][quick-access]. 
+    The same integration with the operative system will be provided with a different graphical interface.
+
+[custom-pillar]: http://www.humane-assessment.com/blog/writing-pillar-books-with-the-gtinspector
+[custom-inspector]: http://www.humane-assessment.com/blog/creating-custom-browsers-out-of-inspector-extensions
+[coding-cards]: https://vimeo.com/148637679 
+[keyboard-ide]: https://vimeo.com/140423783
+[spec-gt]: http://smalltalkhub.com/#!/~jfabry/Playground/packages/Spec-Glamour
+[quick-access]: https://www.youtube.com/watch?v=j-dTp6i_P3s',
+																#children : OrderedCollection [ ],
+																#parent : @220,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'About me',
+																#body : '<!--
+Provide full contact information, email addresses, websites, IRC nick, postal address and telephone. Write a few sentences about yourself, previous experiences and why you think you’re the best for this job. 
+-->
+
+I\'m the Grafoscopio author and I\'m making my PhD research on Design and Creation asking about the reciprocal modification
+of digital tools and communities. 
+For that, moldable tools, agile visualization and meta systems provided by the Pharo ecosystem has been intrumental on prototyping
+new tools that empower local communities.
+I have been an active member of the Pharo community since mid 2014, both virtually, in the users mailing list and slack channels, and face to face 
+in the Smalltalks Argentina 2015, ESUG 2016, and making my internship with the Roassal team in University of Chile / Object Profile and I\'m 
+developing the local  Data Week hackathon+workshop,  where we approach the Pharo environment via data activism themes, creating interactive 
+and visual computing narratives on related issues. 
+I have been presenting Pharo and Grafoscopio in the local context: our local hackerspace (HackBo, Bogotá Colombia), Laboratorio de Ideas (Medellín, Colombia), 
+the Ciudad de Datos research project with researchers from tree Colombian universities (Universidad Javeriana, Bogota; Universidad de Antioquia in Medellín, 
+Universidad de Caldas in Manizales), AbreLatam Open Data regional meeting. 
+
+  - email addresses: 
+    - offray@riseup.net
+    - offray@mutabit.com
+  - Twitter: @offrayLC
+  - Source code repositories:
+    - Smalltalkhub: <http://smalltalkhub.com/#!/~Offray>
+    - Fossil:
+         - <http://mutabit.com/repos.fossil/grafoscopio/>
+         - <http://mutabit.com/repos.fossil/dataweek/>
+
+(For phone and postal address please send an email).
+
+Please use the [tickets system][tickets] in this repository to provide feedback about the proposal. 
+
+[tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket
+
+',
+																#children : OrderedCollection [ ],
+																#parent : @220,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															}
+														],
+														#parent : @218,
+														#level : 2,
+														#nodesInPreorder : OrderedCollection [
+															@220,
+															@222,
+															@225,
+															@228,
+															@231,
+															@234,
+															@237,
+															@240,
+															@243
+														],
+														#links : OrderedCollection [
+															'',
+															'Events/GSOC/2017-offray-luna-proposal.md'
+														]
+													},
+													GrafoscopioNode {
+														#header : 'Proposal for the Summer of Code by Oscar Garcia',
+														#body : '',
+														#children : OrderedCollection [
+															GrafoscopioNode {
+																#header : 'Introduction',
+																#body : '<!--
+ Clearly defined problem. Current state of things. Issues you wish to solve and why. Conclude with solution.
+-->
+
+Dataviz is a companion package for Grafoscopio that implements Domain Specific Visualizations and Languages
+in several themes like: Panama Papers, Twitter data selfies, Open Spending and medicine information access, that
+showcases the development of agile visualization and interates it into literate computating via some interactive notebooks.
+But the package has poor test coverage and some packages, like the medicine information access, require heavy code
+refactoring. Also core Grafoscopio functionality needs better test coverage. 
+ 
+This Summer of code proposal is intended to improve test coverage and make code refactoring on the Dataviz packages and
+on Grafoscopio core functionality.',
+																#children : OrderedCollection [ ],
+																#parent : @248,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Project goals',
+																#body : '<!--
+Format it like a list. Propose a clear list of deliverables, explaining exactly what you promise to do and what you do not plan to do. “Future developments” can be mentioned. It is better to promise less and deliver more than to promise a lot and then fall short.
+-->
+
+The project goals are:
+
+  - Increase code quality by improving test coverage in the current and future source code for the dataviz package and in core Grafoscopio 
+    functionality by making manual test and exploring/implementing automatic testing via QuickCheck Smalltalk implementations.
+  - Refactor the code for the Dataviz packages, including or developing Roassal builders
+
+Future developments
+
+  - Improve graphical UI themes.
+  - Improve Zotero and JabRef integration.
+',
+																#children : OrderedCollection [ ],
+																#parent : @248,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Implementation',
+																#body : '<!--
+Longer and more detailed. Provide technical details, show that you understand the technology and illustrate key technical elements of your proposed solution.
+-->
+
+  - To improve test coverage  SUnit test framework will be used intensively.
+  - To implement code refactoring, Pharo refactoring tools will be used and Roassal custom builders will be implemented.
+',
+																#children : OrderedCollection [ ],
+																#parent : @248,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Timeline',
+																#body : '<!--
+Make it weekly. Set goals for each week. Be upfront about other commitments, including exams, classes, travel, internships, jobs, etc.
+-->
+
+The granularity of the more complex project is spread in several weeks, but the advances and blocking issues will be reported to the mentor(s) weekly and
+it can be made more granular with the interaction with community during the Summer of Code and are subject to Tutors advice for modification. 
+
+| Weeks |                               Goals                                                     | 
+|----------|:---------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | Reading and making all excercises in the Agile Visualization book. |
+| 2 | Implementing test coverage on Panama Papers. |
+| 3 | Implementing test coverage on Twitter data selfies. |
+| 4 | Implementing test coverage on Open Spending class. |
+| 5 | Increasing  test coverage on Grafoscopio core functionality. |
+| 6 | Code refactoring on Infomed class. |
+| 7 | Annotated reading with and interactive notebook writing on automatic testing on QuickCheck in Smalltalk/Pharo. |
+| 8, 9 | Design and Implement automatic testing on the previous packages using QuickCheck. |
+| 10, 11 | Extend and develop interactive notebooks for the lacking dataviz classes. |
+| 12 | Review previous deliverable and goals and implement further development goals, if there is time. |
+
+Table:  Summer of code timeline.',
+																#children : OrderedCollection [ ],
+																#parent : @248,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Benefits to Community',
+																#body : '<!--
+Make your case a benefit to the organization.
+-->
+
+Mature and tested domain specific visualizations and languages, area a showcase of the Pharo ecosystem capabilities,
+particularly agile visualization, for wider audience, that can help to bring more interest into the technology
+and communities behind, so that more people are eager to use the environment and become part the communities,
+increasing their diversity and exposure.',
+																#children : OrderedCollection [ ],
+																#parent : @248,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'Related Work',
+																#body : 'The previous work on the Dataviz package has been made by Offray Luna and documents in several blog post, that are referred here:
+
+  - [Dataviz Package source code][dataviz].
+  - [Domain Specific Visualizations: a glimpse of medicine public data released by governments][infomed].
+  - [Panama Papers: a case for reproducible research, data activism and frictionless data][panama-papers].
+  - [Twitter data selfies: from paper mockup to digital prototype][data-selfies].
+
+The main authoritative source for [Agile visualizations][agile-visualization]  is by Alexandre Bergel, an anotated reading of this book will be done
+in the community binding process.
+
+[dataviz]: http://smalltalkhub.com/#!/~Offray/Dataviz
+[infomed]: http://mutabit.com/offray/blog/en/entry/sdv-infomed
+[panama-papers]: http://mutabit.com/offray/blog/en/entry/panama-papers-1
+[data-selfies]: http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup
+[agile-visualization]: http://agilevisualization.com/',
+																#children : OrderedCollection [ ],
+																#parent : @248,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															},
+															GrafoscopioNode {
+																#header : 'About me',
+																#body : '<!--
+Provide full contact information, email addresses, websites, IRC nick, postal address and telephone. Write a few sentences about yourself, previous experiences and why you think you’re the best for this job. 
+-->
+
+I am a student of Computer and systems engineering in Universidad Nacional de Colombia.
+I have deep knowledge on Object Oriented Programming.
+I am in last semester and just knew about the GSoC, I love the idea and would love to participate in such a project. 
+Offray  Luna introduced me to Pharo and Grafoscopio and love the way it works.
+I am a fast learner and have pretty good logic, in English I am like a B2+ or C1.
+The GSoC is a great oportunity and I am really  enthusiastic to work in this project.
+
+Name: Oscar David Garcia Medina
+email: odgarciam@unal.edu.co
+
+(For phone and postal address please send an email).
+
+Please use the [tickets system][tickets] in this repository to provide feedback about the proposal. 
+
+[tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket',
+																#children : OrderedCollection [ ],
+																#parent : @248,
+																#level : 3,
+																#links : OrderedCollection [
+																	''
+																]
+															}
+														],
+														#parent : @218,
+														#level : 2,
+														#nodesInPreorder : OrderedCollection [
+															@248,
+															@250,
+															@253,
+															@256,
+															@259,
+															@262,
+															@265,
+															@268
+														],
+														#links : OrderedCollection [
+															'',
+															'Events/GSOC/2017-oscar-garcia-proposal.md'
+														]
+													}
+												],
+												#parent : @41,
+												#level : 1,
+												#links : OrderedCollection [
+													''
+												]
+											}
+										],
+										#level : 0,
+										#nodesInPreorder : OrderedCollection [
+											@41,
+											@43,
+											@46,
+											@48,
+											@51,
+											@55,
+											@57,
+											@59,
+											@61,
+											@63,
+											@65,
+											@67,
+											@70,
+											@73,
+											@78,
+											@81,
+											@91,
+											@93,
+											@95,
+											@99,
+											@104,
+											@106,
+											@116,
+											@118,
+											@121,
+											@123,
+											@127,
+											@129,
+											@132,
+											@138,
+											@141,
+											@143,
+											@153,
+											@157,
+											@159,
+											@170,
+											@172,
+											@183,
+											@185,
+											@194,
+											@197,
+											@201,
+											@203,
+											@208,
+											@210,
+											@212,
+											@25,
+											@24,
+											GrafoscopioNode {
+												#header : 'Instalation instructions',
+												#body : 'Dataviz package is installed by default with the installation of Grafoscopio, but you can
+install it separately by using Monticello Pharo package manager configurations. 
+To install and load Dataviz, simply run:
+
+',
+												#children : OrderedCollection [
+													GrafoscopioNode {
+														#header : 'Install and load configuration',
+														#body : '"Start by loading the configuration of Dataviz"
+  Gofer new
+    url: \'http://smalltalkhub.com/Offray/Dataviz/main\';
+    package: \'ConfigurationOfDataviz\';
+  load.
+
+"After that load Datavi"
+ConfigurationOfDataviz load.
+',
+														#tags : 'código',
+														#children : OrderedCollection [ ],
+														#parent : @275,
+														#level : 4,
+														#links : OrderedCollection [
+															'',
+															'http://ws.stfx.eu/D6DDTUAMWIOK'
+														]
+													}
+												],
+												#parent : @24,
+												#level : 3,
+												#links : OrderedCollection [
+													''
+												]
+											},
+											@277,
+											GrafoscopioNode {
+												#header : 'Usage instructions & Examples',
+												#body : 'As we said, Dataviz is a set of packaged exmaples of Domain Specific Visualizations and Domain Specific
+Language (DSV and DSL) using Roassal agile visualization engine and/or documented with Grafoscopio
+notebook, so the usage instructions is related with how to use and explore such examples.
+
+Dataviz presents a main notebook (from which this  ̀readme ̀ file was generated), that introduce
+its Domain Specific Visualizations & Languages.
+To open the notebook go to the Grafoscopio docking bar',
+												#children : OrderedCollection [ ],
+												#parent : @24,
+												#level : 3,
+												#links : OrderedCollection [
+													''
+												]
+											},
+											GrafoscopioNode {
+												#header : 'API documentation',
+												#body : '',
+												#children : OrderedCollection [ ],
+												#parent : @24,
+												#level : 3,
+												#links : OrderedCollection [
+													''
+												]
+											},
+											GrafoscopioNode {
+												#header : 'Test',
+												#body : '',
+												#children : OrderedCollection [ ],
+												#parent : @24,
+												#level : 3,
+												#links : OrderedCollection [
+													''
+												]
+											},
+											GrafoscopioNode {
+												#header : 'Community Guidelines',
+												#body : '',
+												#children : OrderedCollection [ ],
+												#parent : @24,
+												#level : 3,
+												#links : OrderedCollection [
+													''
+												]
+											},
+											GrafoscopioNode {
+												#header : '%idea external links',
+												#body : '[agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html
+[beaker]: http://beakernotebook.com/
+[bibtex]: https://en.wikipedia.org/wiki/BibTeX
+[chocolatey]: https://chocolatey.org/
+[citezen]: http://people.untyped.org/damien.pollet/software/citezen/
+[d3js]: https://d3js.org/
+[dataviz-sthub]: http://smalltalkhub.com/#!/~Offray/Dataviz 
+[dataweek]: http://mutabit.com/dataweek/
+[etherpad]: https://en.wikipedia.org/wiki/Etherpad
+[flare]: http://flare.prefuse.org/
+[floor-function]: https://en.wikipedia.org/wiki/Floor_and_ceiling_functions
+[fuel]: http://rmod.inria.fr/web/software/Fuel
+[fossil]: http://fossil-scm.org/
+[joss]: http://joss.theoj.org/
+[grafoscopio-en]: http://mutabit.com/grafoscopio/index.en.html
+[grafoscopio-fossil]: http://mutabit.com/repos.fossil/grafoscopio/
+[grafoscopio-tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket
+[grafoscopio-tickets-current]: http://mutabit.com/repos.fossil/grafoscopio/rptview?rn=1
+[grafoscopio-sthub]: http://smalltalkhub.com/#!/~Offray/Grafoscopio
+[git]: https://en.wikipedia.org/wiki/Git
+[github]: https://en.wikipedia.org/wiki/GitHub
+[gogs]: https://gogs.io/
+[gt-tools]: http://gtoolkit.org/
+[hackbo]: http://hackbo.co/
+[json]: http://en.wikipedia.org/wiki/JavaScript_Object_Notation
+[jupyter]: http://jupyter.org/
+[jupyterlab]: http://jupyterlab.github.io/jupyterlab/
+[latex]: https://en.wikipedia.org/wiki/LaTeX
+[leo]: http://leoeditor.com
+[light-markup-languages]: https://en.wikipedia.org/wiki/Light_markup_language
+[manual-tip]: http://mutabit.com/repos.fossil/grafoscopio/dir?tip&name=Docs/En/Books/Manual
+[markdown]: http://pandoc.org/MANUAL.html#pandocs-markdown
+[mooc]: https://siemenbaader.github.io/PharoMooc-website/
+[mooc-spotter1]: http://rmod-pharo-mooc.lille.inria.fr/MOOC/Videos/W3/C019-Videos-Spotter1-BrowsingAClassWithSpotter-V2-HD_720p_4Mbs.m4v
+[mooc-spotter2]: http://rmod-pharo-mooc.lille.inria.fr/MOOC/Videos/W3/C019-Videos-Spotter2-Categories-V2-HD_720p_4Mbs.m4v
+[mooc-w3-14]: http://amara.org/en/videos/04UWGMwnrdXz/info/rmod-pharo-mooclilleinriafrc019-videos-redo-dsl-hd_720p_4mbsm4v/
+[neojson]: https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/NeoJSON/NeoJSON.html
+[nix]: http://nixos.org/nix/
+[nosql]: https://en.wikipedia.org/wiki/NoSQL
+[nteract]: https://nteract.io/
+[oop-pharo-2017]: https://ci.inria.fr/pharo-contribution/view/Books/job/LearningObjectOrientedProgramming/98/artifact/book.pdf
+[org-mode]: http://orgmode.org/
+[pastebin]: https://en.wikipedia.org/wiki/Pastebin
+[pandoc]: http://pandoc.org/
+[pharo]: http://pharo.org/
+[pharo-download]: http://pharo.org/download
+[pollen]: http://docs.racket-lang.org/pollen/
+[processing]: https://processing.org/
+[raphaeljs]: https://dmitrybaranovskiy.github.io/raphael/
+[roassal]: http://agilevisualization.com/
+[rolling-release]: https://en.wikipedia.org/wiki/Rolling_release
+[spec]: http://files.pharo.org/books/spec-tutorial/
+[spotter]: http://gtoolkit.org/#spotter
+[sqlite]: http://sqlite.org/
+[ston]: https://github.com/svenvc/ston/blob/master/ston-paper.md
+[texmacs]: http://texmacs.org/
+[udbc]: http://www.smalltalkhub.com/#!/~TorstenBergmann/UDBC 
+[zeppling]: http://zeppelin-project.org/
+[zotero]: https://www.zotero.org/
+[zotero-manual]: https://www.zotero.org/groups/diseo_y_creacion_phd_msc_universidad_de_caldas/items/collectionKey/PHGTCZVT',
+												#children : @16,
+												#parent : @24,
+												#level : 3,
+												#nodesInPreorder : OrderedCollection [
+													@293
+												],
+												#links : @18
+											},
+											GrafoscopioNode {
+												#header : 'Licences',
+												#body : 'Dataviz is licensed under MIT license and the readme and the Dataviz 
+documentation downloaded with the package installation is licensed under a 
+modified P2P license.
+To see a full copy of such respective licenses, please visit the files under this repository:
+
+  - ./Docs/En/Licenses/grafoscopio-mit.md
+  - ./Docs/En/Licenses/documents-p2p-ismb.md
+',
+												#children : OrderedCollection [ ],
+												#parent : @24,
+												#level : 3,
+												#links : OrderedCollection [
+													''
+												]
+											},
+											@31,
+											@33,
+											@36,
+											@218,
+											@220,
+											@222,
+											@225,
+											@228,
+											@231,
+											@234,
+											@237,
+											@240,
+											@243,
+											@248,
+											@250,
+											@253,
+											@256,
+											@259,
+											@262,
+											@265,
+											@268
+										],
+										#links : OrderedCollection [ ]
+									},
+									#level : 1,
+									#links : OrderedCollection [
+										''
+									]
+								},
+								#level : 2,
+								#nodesInPreorder : OrderedCollection [
+									@24,
+									@275,
+									@277,
+									@281,
+									@284,
+									@287,
+									@290,
+									@293,
+									@295
+								],
+								#links : OrderedCollection [
+									'',
+									'Packages/Dataviz/',
+									'Packages/Dataviz/readme.md',
+									'readme.md'
+								]
+							},
+							#level : 3,
+							#links : @14
+						},
+						@275,
+						@281,
+						@284,
+						@287,
+						@290,
+						@293,
+						@295
+					],
+					#parent : @4,
+					#level : 1,
+					#nodesInPreorder : OrderedCollection [
+						@21,
+						@23,
+						@275,
+						@277,
+						@281,
+						@284,
+						@287,
+						@290,
+						@293,
+						@295
+					],
+					#links : @301
+				},
+				@23,
+				@275,
+				@277,
+				@281,
+				@284,
+				@287,
+				@290,
+				@293,
+				@295,
+				GrafoscopioNode {
+					#header : '%idea JOSS paper',
+					#body : '  ---
+  title: \'Dataviz: A package of domain specific visualizations and languages for the Pharo live coding environment\'
+  tags:
+    - literate computing
+    - reproducible research
+    - data visualization
+    - agile visualization
+    - data activism
+    - pocket infrastructures
+    - moldable tools
+    - civil tech
+    - grafoscopio
+  authors:
+   - name: Offray Vladimir Luna Cárdenas
+     orcid: 0000-0002-4640-6984
+     affiliation: 1
+     affiliation: 2
+     affiliation: 3
+  affiliations:
+   - name: HackBo: a hackerspace in Bogotá
+     index: 1
+   - name: mutabiT
+     index: 2
+  - name: University of Caldas
+     index: 3
+  date: 29 March 2017
+  bibliography: paper.bib
+  ---
+
+  # Summary
+
+  Dataviz is a companion package for Grafoscopio [ @luna-2014] that puts together several examples of Domain
+  Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the Roassal
+  agile visualization engine [@bergel].
+  Included prototypes approach several themes like:  
+  Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
+  and published medicine access [@luna-infomed] and are presented via blog post and internal 
+  interactive documentation via Grafoscopio notebooks.
+  The classes in the package and their documentation show several levels of maturity from pretty mature 
+  (Panama Papers) to early coder practices (Infomed) and are offered as examples and excersises to learners in our
+  recurrent Dataviz workshop+hackathon, for code testing and refactoring.
+  
+  %embed HTML screenshot
+  %embed LaTeX screenshot
+
+  # References
+',
+					#children : @32,
+					#parent : @4,
+					#level : 1,
+					#nodesInPreorder : OrderedCollection [
+						@303,
+						@33,
+						@36
+					],
+					#links : @40
+				},
+				@33,
+				@36,
+				GrafoscopioNode {
+					#header : 'Bibliography',
+					#body : '',
+					#children : OrderedCollection [
+						GrafoscopioNode {
+							#header : '%invisible ',
+							#body : '',
+							#children : OrderedCollection [
+								GrafoscopioNode {
+									#header : 'Quering Zotero collection and exporting as BibTeX',
+									#body : '"This script updates the bibliography for this document with the latest
+available online. Useful if you\'re adding new bibliographic references"
+| bibTeXData bibFile bibliography tempStream |
+bibTeXData := (ZoteroLibrary new groupID: \'204755\') subcollectionAsBibTeX: \'PHGTCZVT\'.
+tempStream := \'\' writeStream.
+bibliography := CZBibParser parse: bibTeXData.
+bibliography entries do: [ :entry | 
+\tentry fields second key = \'shorttitle\'
+\t\tifTrue: [entry key: entry fields second value ].
+\ttempStream nextPutAll: (BibBibRenderer new render: entry) contents].
+bibFile := FileLocator home asFileReference / \'Programas\' / \'Grafoscopio\' / \'Doc\' / \'Docs\' / \'En\' / \'Books\' / \'Manual\' / \'bibliography.bib\'.
+bibFile exists
+\tifTrue: [ bibFile delete ] 
+\tifFalse: [ bibFile ensureCreateFile ].
+bibFile writeStreamDo: [ :stream | stream nextPutAll: tempStream contents ].
+bibFile
+
+',
+									#tags : 'código',
+									#children : OrderedCollection [ ],
+									#parent : @307,
+									#level : 3,
+									#links : OrderedCollection [
+										'',
+										'http://ws.stfx.eu/4138G3OYJZ9I'
+									]
+								},
+								GrafoscopioNode {
+									#header : 'Problems with Pandoc and bibliography',
+									#body : 'This note is here, to provide context, but it should be moved to the developers notebook.
+
+While running the PDF conversion command:
+
+~~~
+pandoc -N --template=mytemplate.tex --variable fontsize=12pt --variable version=1.3.4 --latex-engine=xelatex --toc --bibliography bibliography.bib manual.markdown -o manual.pdf
+~~~
+
+I got this error:
+
+~~~
+pandoc-citeproc: "stdin" (line 8, column 2):
+unexpected "m"
+expecting "c", "C", "p", "P", "s" or "S"
+CallStack (from HasCallStack):
+  error, called at src/Text/CSL/Input/Bibtex.hs:113:32 in pandoc-citeproc-0.10.4-Ks7e5k595uURtHUpwsSlk:Text.CSL.Input.Bibtex
+pandoc: Error running filter pandoc-citeproc
+Filter returned error status 1
+~~~
+
+The problem is the way Zotero or Citezen are creating BibTeX entries that contain has a value in the field "Adicional" in the Zotero
+library (mi Zotero UI is in Spanish), represented in the exported entry as note: {}.
+They should be removed. 
+May be we should control the fields exported by Citezen, editing or deleting all conflicting fields/characters for pandoc-citeproc. ',
+									#children : OrderedCollection [ ],
+									#parent : @307,
+									#level : 3,
+									#links : OrderedCollection [
+										'',
+										'https://github.com/jgm/pandoc/issues/1034'
+									]
+								},
+								GrafoscopioNode {
+									#header : 'Old citezen tests',
+									#body : 'Previously I made some tests with [citezen][citezen] for cleaning the bibliographic references,
+but that implementation was abandoned, because it was far too specific.
+Now that I\'m implemeting Zotero back end in a more general way, would be nice to retake
+the initial citezen experiments.
+
+See/browse children nodes for some details on previos exploration.
+
+[citezen]: (http://people.untyped.org/damien.pollet/software/citezen/)',
+									#children : OrderedCollection [
+										GrafoscopioNode {
+											#header : 'Tweet',
+											#body : '',
+											#children : OrderedCollection [
+												GrafoscopioNode {
+													#header : 'Script screenshot zoom',
+													#body : '',
+													#children : OrderedCollection [ ],
+													#parent : @317,
+													#level : 5,
+													#links : OrderedCollection [
+														'',
+														'https://www.enlightenment.org/ss/e-54454b6c965410.68921158.jpg'
+													]
+												}
+											],
+											#parent : @315,
+											#level : 4,
+											#links : OrderedCollection [
+												'',
+												'https://twitter.com/offrayLC/status/524258229875142657'
+											]
+										},
+										GrafoscopioNode {
+											#header : 'Thread asking for bibtex support',
+											#body : '',
+											#children : OrderedCollection [
+												GrafoscopioNode {
+													#header : 'Old script',
+													#body : '| bibFile bibliography bibStream bibOutputer |
+bibFile := ((FileLocator documents / \'U/Libertadores/Grafoscopio/Docs/Es/Articulos/Libertadores/\') children
+    detect: [:each | each basename endsWith: \'bib\' ]).
+bibliography := CZBibParser parse: bibFile contents.
+bibStream := \'\' writeStream.
+(bibliography entries) do: [:bibItem |
+\tbibItem fields do: [:some | some key = \'shorttitle\'
+\t\tifTrue: [ bibItem key: some value ]].
+\tbibOutputer := CZBibTeXDocBuilder  new.
+\tbibStream nextPutAll: 
+\t\t\t(bibOutputer entryToBibtexString: bibItem); cr].
+bibliography.
+bibFile writeStreamDo: [:stream |
+       stream nextPutAll: bibStream contents withUnixLineEndings ].
+bibStream contents.
+',
+													#tags : 'código',
+													#children : OrderedCollection [ ],
+													#parent : @323,
+													#level : 5,
+													#links : OrderedCollection [
+														'',
+														'http://ws.stfx.eu/3CEKQQQ3NL2E'
+													]
+												}
+											],
+											#parent : @315,
+											#level : 4,
+											#links : OrderedCollection [
+												'',
+												'http://forum.world.st/Citizen-example-for-manipulating-a-bibtex-file-tt4784240.html#a4822230'
+											]
+										}
+									],
+									#parent : @307,
+									#level : 3,
+									#links : OrderedCollection [
+										''
+									]
+								}
+							],
+							#parent : @305,
+							#level : 2,
+							#links : OrderedCollection [
+								'',
+								''
+							]
+						}
+					],
+					#parent : @4,
+					#level : 1,
+					#links : OrderedCollection [
+						'',
+						'',
+						'',
+						'',
+						'',
+						''
+					]
+				},
+				@307,
+				@309,
+				@312,
+				@315,
+				@317,
+				@319,
+				@323,
+				@325
+			],
+			#links : OrderedCollection [ ]
+		},
+		#level : 1,
+		#links : OrderedCollection [
+			''
+		]
+	},
+	@6,
+	@21,
+	@303,
+	@305
+]
