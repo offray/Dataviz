@@ -107,7 +107,7 @@ GrafoscopioDocumentation openDatavizIntro
 
 ### API documentation
 
-Dataviz, like Grafoscopio, inhabits the Phaor full live coding environment,
+Dataviz, like Grafoscopio, inhabits the Pharo full live coding environment,
 and we follow the custom of making the API documentation available
 inside a dynamic environment, instead in some static web page.
 
@@ -141,6 +141,7 @@ But, just for reference, plese see the Community Guidelines section in the
 [joss]: http://joss.theoj.org/
 [grafoscopio-en]: http://mutabit.com/grafoscopio/index.en.html
 [grafoscopio-fossil]: http://mutabit.com/repos.fossil/grafoscopio/
+[grafoscopio-manual]: http://mutabit.com/repos.fossil/grafoscopio/doc/tip/Docs/En/Books/Manual/manual.pdf
 [grafoscopio-tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket
 [grafoscopio-tickets-current]: http://mutabit.com/repos.fossil/grafoscopio/rptview?rn=1
 [grafoscopio-sthub]: http://smalltalkhub.com/#!/~Offray/Grafoscopio
@@ -193,7 +194,7 @@ documentation downloaded with the package installation is licensed under a
 modified P2P license.
 To see a full copy of such respective licenses, please visit the files under this repository:
 
-  - ./Docs/En/Licenses/grafoscopio-mit.md
-  - ./Docs/En/Licenses/documents-p2p-ismb.md
+  - [Dataviz source code and software MIT license](../../Docs/En/Licenses/grafoscopio-mit.md)
+  - [Dataviz documentation P2P modified license](../../Docs/En/Licenses/documents-p2p-ismb.md)
 
 
