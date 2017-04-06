@@ -1,5 +1,11 @@
 # The Dataviz package
 
+<!--
+This subtree produces the intro file that is the default page you see when visiting:
+
+http://mutabit.com/repos.fossil/grafoscopio/doc/tip/Packages/Dataviz/intro.md
+-->
+
 <p>
   <a href="http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup">
     <img 

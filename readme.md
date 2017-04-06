@@ -1,6 +1,10 @@
 # Dataviz readme
 
+<!--
+This subtree produces the readme markdown file that is used to produce the page you see when visiting:
 
+http://mutabit.com/repos.fossil/grafoscopio/doc/tip/Packages/Dataviz/readme.html
+-->
 
 <p>
   <a href="http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup">
@@ -94,19 +98,34 @@ notebook, so the usage instructions is related with how to use and explore such 
 
 Dataviz presents a main notebook (from which this  ̀readme ̀ file was generated), that introduce
 its Domain Specific Visualizations & Languages.
-To open the notebook go to the Grafoscopio docking bar
+To open the notebook go to the Grafoscopio docking bar and select `Help > Dataviz` or execute
+the following code:;
+
+
+
+~~~{.numberLines}
+GrafoscopioDocumentation ope
+~~~
 
 ### API documentation
 
+Dataviz, like Grafoscopio, inhabits the Phaor full live coding environment,
+and we follow the custom of making the API documentation available
+inside a dynamic environment, instead in some static web page.
 
-
-### Test
-
+Instructions for opening different parts of the Dataviz API  inside the system browser,
+and see the objects and  messages organized by protocols, are provided in the companion interactive
+notebook, with other contextual information, so we recoment to refer to the notebook API documentation.
 
 
 ### Community Guidelines
 
-
+Because the community that makes/uses Grafoscopio is the same for Dataviz,
+we follow the same community guidelines for contributing to the community,
+reporting bugs and other ways of collaboration.
+It is supposed that you are familiar with Grafoscopio and its manual, if you are using Dataviz.
+But, just for reference, plese see the Community Guidelines section in the 
+[Grafoscopio manual][grafoscopio-manual] for more detailed information about the above subjects.
 
 [agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html
 [beaker]: http://beakernotebook.com/
