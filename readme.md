@@ -14,7 +14,6 @@ http://mutabit.com/repos.fossil/grafoscopio/doc/tip/Packages/Dataviz/readme.html
       width="30%"
     />
   </a>
-
   <a href="http://mutabit.com/offray/blog/en/entry/sdv-infomed">
     <img 
     margin-right: 1%; 
@@ -24,7 +23,6 @@ http://mutabit.com/repos.fossil/grafoscopio/doc/tip/Packages/Dataviz/readme.html
     width="30%"
     >
   </a>
-
   <a href="http://mutabit.com/offray/blog/en/entry/panama-papers-1">
     <img 
     src="http://mutabit.com/repos.fossil/offray-blog/doc/tip/user/pages/entry/panama-papers-1/minisite.png" 
