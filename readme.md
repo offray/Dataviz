@@ -104,7 +104,7 @@ the following code:;
 
 
 ~~~{.numberLines}
-GrafoscopioDocumentation ope
+GrafoscopioDocumentation openDatavizIntro 
 ~~~
 
 ### API documentation

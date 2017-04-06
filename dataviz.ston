@@ -2472,7 +2472,7 @@ the following code:;
 												#children : OrderedCollection [
 													GrafoscopioNode {
 														#header : 'Open dataviz introdutory notebook',
-														#body : 'GrafoscopioDocumentation ope',
+														#body : 'GrafoscopioDocumentation openDatavizIntro ',
 														#tags : 'código',
 														#children : OrderedCollection [ ],
 														#parent : @307,
@@ -2690,8 +2690,8 @@ To see a full copy of such respective licenses, please visit the files under thi
 						@301,
 						@303,
 						@307,
+						@309,
 						@313,
-						@316,
 						@323,
 						@326,
 						@328
