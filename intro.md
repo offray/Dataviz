@@ -46,8 +46,8 @@ Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) d
 [Roassal agile visualization engine][roassal].
 Included prototypes approach several themes like:
 [Panama Papers as reproducible Research][panama-papers], [Twitter Data Selfies][twitter-ds]
-and [published medicine information access][infomed] and are presented via blog post and internal 
-interactive documentation via Grafoscopio notebooks.
+and [published medicine information access][infomed] and are presented using blog post and/or internal 
+interactive documentation, via Grafoscopio notebooks.
 The classes in the package and their documentation show several levels of maturity from pretty mature 
 (Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
 are offered as examples and excersises to learners in our recurrent [Data Week][dataweek] workshop+hackathon, 
@@ -67,7 +67,6 @@ Here are some other quick entry points for Dataviz:
   - The Dataviz paper for [JOSS][joss] will give you a quick scholar view for the software: 
     abstract, metatada and links and to dig deeper:
     [[source](./JOSS/paper.md)] | 
-    [[LaTeX](./paper.tex)] | 
     [[PDF](./paper.pdf)].
   - The [Dataviz source code repository][dataviz-sthub] on SmalltalkHub.
 

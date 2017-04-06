@@ -196,8 +196,8 @@ Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) d
 [Roassal agile visualization engine][roassal].
 Included prototypes approach several themes like:
 [Panama Papers as reproducible Research][panama-papers], [Twitter Data Selfies][twitter-ds]
-and [published medicine information access][infomed] and are presented via blog post and internal 
-interactive documentation via Grafoscopio notebooks.
+and [published medicine information access][infomed] and are presented using blog post and/or internal 
+interactive documentation, via Grafoscopio notebooks.
 The classes in the package and their documentation show several levels of maturity from pretty mature 
 (Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
 are offered as examples and excersises to learners in our recurrent [Data Week][dataweek] workshop+hackathon, 
@@ -217,7 +217,6 @@ Here are some other quick entry points for Dataviz:
   - The Dataviz paper for [JOSS][joss] will give you a quick scholar view for the software: 
     abstract, metatada and links and to dig deeper:
     [[source](./JOSS/paper.md)] | 
-    [[LaTeX](./paper.tex)] | 
     [[PDF](./paper.pdf)].
   - The [Dataviz source code repository][dataviz-sthub] on SmalltalkHub.
 ',
@@ -500,6 +499,139 @@ Here are some other quick entry points for Dataviz:
 													#links : OrderedCollection [
 														''
 													]
+												},
+												GrafoscopioNode {
+													#header : '%invisible ',
+													#body : '',
+													#children : OrderedCollection [
+														GrafoscopioNode {
+															#header : 'Bibliography',
+															#body : '',
+															#children : OrderedCollection [
+																GrafoscopioNode {
+																	#header : 'Quering Zotero collection and exporting as BibTeX',
+																	#body : '"This script updates the bibliography for this document with the latest
+available online. Useful if you\'re adding new bibliographic references"
+| bibTeXData bibFile bibliography tempStream |
+bibTeXData := (ZoteroLibrary new groupID: \'204755\') subcollectionAsBibTeX: \'N8AUS6TT\'.
+tempStream := \'\' writeStream.
+bibliography := CZBibParser parse: bibTeXData.
+bibliography entries do: [ :entry | 
+\tentry fields second key = \'shorttitle\'
+\t\tifTrue: [entry key: entry fields second value ].
+\ttempStream nextPutAll: (BibBibRenderer new render: entry) contents].
+bibFile := FileLocator home asFileReference / \'Programas\' / \'Grafoscopio\' / \'Repo\' / \'Packages\' / \'Dataviz\' / \'JOSS\' / \'paper.bib\'.
+bibFile exists
+\tifTrue: [ bibFile delete ] 
+\tifFalse: [ bibFile ensureCreateFile ].
+bibFile writeStreamDo: [ :stream | stream nextPutAll: tempStream contents ].
+bibFile
+',
+																	#tags : 'código',
+																	#children : OrderedCollection [ ],
+																	#parent : @67,
+																	#level : 3,
+																	#links : OrderedCollection [
+																		'',
+																		'http://ws.stfx.eu/4138G3OYJZ9I'
+																	]
+																}
+															],
+															#parent : @65,
+															#level : 3,
+															#links : OrderedCollection [
+																'',
+																''
+															]
+														},
+														GrafoscopioNode {
+															#header : 'Exporting this paper',
+															#body : 'The idea is, at some point it to support a Pharo dictionary of metadata, including
+options to export the generated markdown file to other formats, by increasing self
+referentiality on the notebook (read its own defined dictionaries, and use them as
+export options). Meanwhile, here is the command used on this notebook for the
+generated output:
+
+',
+															#children : OrderedCollection [ ],
+															#parent : @65,
+															#level : 3,
+															#links : OrderedCollection [
+																''
+															]
+														}
+													],
+													#parent : GrafoscopioNode {
+														#header : '%idea JOSS paper',
+														#body : '  ---
+  title: \'Dataviz: A package of domain specific visualizations and languages for the Pharo live coding environment\'
+  tags:
+    - literate computing
+    - reproducible research
+    - data visualization
+    - agile visualization
+    - data activism
+    - pocket infrastructures
+    - moldable tools
+    - civil tech
+    - grafoscopio
+  authors:
+   - name: Offray Vladimir Luna Cárdenas
+     orcid: 0000-0002-4640-6984
+     affiliation: 1
+     affiliation: 2
+     affiliation: 3
+  affiliations:
+   - name: HackBo: a hackerspace in Bogotá
+     index: 1
+   - name: mutabiT
+     index: 2
+  - name: University of Caldas
+     index: 3
+  date: 06 April 2017
+  bibliography: paper.bib
+  ---
+
+  # Summary
+
+  Dataviz is a companion package for Grafoscopio [ @luna-grafoscopio-2014] that puts together several examples
+  of Domain Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the Roassal
+  agile visualization engine [@bergel_agile_2016].
+  Included prototypes approach several themes like:  
+  Panama Papers as reproducible Research [@luna-panama-papers-2016], Twitter Data Selfies [@luna-twitter-ds-2016]
+  and published medicine access [@luna-dsv-infomed-2016] and are presented via blog post and internal interactive
+  documentation via Grafoscopio notebooks.
+  The classes in the package and their documentation show several levels of maturity from pretty mature (Panama Papers)
+  to early coder practices (Infomed) and are offered as examples and excersises to learners in our recurrent Data Week
+  workshop+hackathon, for code testing and refactoring.
+  
+  %embed HTML screenshot
+  %embed LaTeX screenshot
+
+  # References
+',
+														#children : @58,
+														#parent : @4,
+														#level : 1,
+														#nodesInPreorder : OrderedCollection [
+															@76,
+															@59,
+															@62,
+															@65,
+															@67,
+															@69,
+															@73
+														],
+														#links : OrderedCollection [
+															'',
+															'Packages/Dataviz/JOSS/paper.md',
+															'JOSS/paper.md'
+														]
+													},
+													#level : 2,
+													#links : OrderedCollection [
+														''
+													]
 												}
 											],
 											#parent : @51,
@@ -509,11 +641,7 @@ Here are some other quick entry points for Dataviz:
 												@59,
 												@62
 											],
-											#links : OrderedCollection [
-												'',
-												'Packages/Dataviz/JOSS/paper.md',
-												'JOSS/paper.md'
-											]
+											#links : @78
 										}
 									],
 									#parent : GrafoscopioNode {
@@ -527,7 +655,7 @@ It documents Grafoscopio and Dataviz projects/packages.
 It generates several exported subtrees that are documents in such shared repository
 for both projects documentation.',
 												#children : OrderedCollection [ ],
-												#parent : @67,
+												#parent : @81,
 												#level : 1,
 												#links : OrderedCollection [
 													''
@@ -577,7 +705,7 @@ You can use the top bar to browse this repository or use these quick entry point
     </figcaption>
 <figure>',
 														#children : OrderedCollection [ ],
-														#parent : @72,
+														#parent : @86,
 														#level : 2,
 														#links : OrderedCollection [
 															''
@@ -645,20 +773,20 @@ You can use the top bar to browse this repository or use these quick entry point
 [zotero]: https://www.zotero.org/
 [zotero-manual]: https://www.zotero.org/groups/diseo_y_creacion_phd_msc_universidad_de_caldas/items/collectionKey/PHGTCZVT',
 														#children : @40,
-														#parent : @72,
+														#parent : @86,
 														#level : 2,
 														#nodesInPreorder : OrderedCollection [
-															@77
+															@91
 														],
 														#links : @42
 													}
 												],
-												#parent : @67,
+												#parent : @81,
 												#level : 1,
 												#nodesInPreorder : OrderedCollection [
-													@72,
-													@74,
-													@77
+													@86,
+													@88,
+													@91
 												],
 												#links : OrderedCollection [
 													'',
@@ -731,7 +859,7 @@ and reproducible research, that is being used in several fields: citizen, garage
 Grafoscopio is covered by a Free Libre Open Source Software license (MIT) and it has an associated hackathon/workshop, called the Data Week, oriented to citizen concerns, which are related and mediated by data and visualization. There we learn, adapt and feedback this tool.
 Grafoscopio is and integrates simple and self-cointained "pocket infractures", that can be execute On/Off-line, from a USB thumb drive, a rasperry-Pi alike computer, a modest server or any hardware in between and beyond. ',
 																								#children : OrderedCollection [ ],
-																								#parent : @91,
+																								#parent : @105,
 																								#level : 3,
 																								#links : OrderedCollection [
 																									''
@@ -759,7 +887,7 @@ concived as a empowering, simple, flexible and self contained *pocket infrastruc
 (that works off-line/on-line from USB thumb drives and/or low resources machines [@luna2014]).
 ',
 																								#children : OrderedCollection [ ],
-																								#parent : @91,
+																								#parent : @105,
 																								#level : 3,
 																								#links : OrderedCollection [
 																									''
@@ -769,21 +897,21 @@ concived as a empowering, simple, flexible and self contained *pocket infrastruc
 																								#header : 'From GSoC',
 																								#body : 'Literate computing is a way of mixing text, code, data and visualizations for making data based storytelling, experimentation, exploration and documentation in diverse broad fields like academia, journalism, research and activism, or Pharo specific themes (for Roasall, Polymath etc). Grafoscopio is a tool that brings literate computing to the Pharo environment by allowing the creation of structured interactive notebooks in a tree-like programmable document metaphor.',
 																								#children : OrderedCollection [ ],
-																								#parent : @91,
+																								#parent : @105,
 																								#level : 3,
 																								#links : OrderedCollection [
 																									''
 																								]
 																							}
 																						],
-																						#parent : @89,
+																						#parent : @103,
 																						#level : 3,
 																						#links : OrderedCollection [
 																							''
 																						]
 																					}
 																				],
-																				#parent : @87,
+																				#parent : @101,
 																				#level : 3,
 																				#links : OrderedCollection [
 																					''
@@ -821,7 +949,7 @@ No prior knowledge of programming is supposed to follow this manual.
 
 ![ Detail for the Grafoscopio [English web page][grafoscopio-en]. ](../../../Imagenes/grafoscopio-webpage-en.png){#fig:web-page-en}',
 																				#children : OrderedCollection [ ],
-																				#parent : @87,
+																				#parent : @101,
 																				#level : 3,
 																				#links : OrderedCollection [
 																					''
@@ -844,7 +972,7 @@ future possibilities, and that is why we take this unusual approach to GUI.
 
 Where the GUI is more a remainder for the future, I will point that using the **TBD** remark (for To Be Done).',
 																				#children : OrderedCollection [ ],
-																				#parent : @87,
+																				#parent : @101,
 																				#level : 3,
 																				#links : OrderedCollection [
 																					''
@@ -860,7 +988,7 @@ Where the GUI is more a remainder for the future, I will point that using the **
 																					#values : [ ]
 																				}
 																			},
-																			#children : @86,
+																			#children : @100,
 																			#level : 1,
 																			#links : OrderedCollection [
 																				'',
@@ -964,14 +1092,14 @@ stated in the Pollen documentation, which is a short phrase to express a powerfu
 about burring the disctinction between the document and the program, that is present 
 in several programs, like TeXmacs, Leo, Org Mode, and, of course, Grafoscopio.',
 																						#children : OrderedCollection [ ],
-																						#parent : @119,
+																						#parent : @133,
 																						#level : 4,
 																						#links : OrderedCollection [
 																							''
 																						]
 																					}
 																				],
-																				#parent : @117,
+																				#parent : @131,
 																				#level : 3,
 																				#links : OrderedCollection [
 																					'',
@@ -1018,7 +1146,7 @@ more data bases, including [NoSQL][nosql], other exporters and
 
 ',
 																				#children : OrderedCollection [ ],
-																				#parent : @117,
+																				#parent : @131,
 																				#level : 3,
 																				#links : OrderedCollection [
 																					'',
@@ -1032,7 +1160,7 @@ more data bases, including [NoSQL][nosql], other exporters and
 																				]
 																			}
 																		],
-																		#parent : @110,
+																		#parent : @124,
 																		#level : 2,
 																		#links : OrderedCollection [
 																			'',
@@ -1042,24 +1170,24 @@ more data bases, including [NoSQL][nosql], other exporters and
 																		]
 																	}
 																],
-																#parent : @83,
+																#parent : @97,
 																#level : 2,
 																#nodesInPreorder : OrderedCollection [
-																	@85,
-																	@87,
-																	@89,
-																	@91,
-																	@93,
-																	@96,
 																	@99,
-																	@104,
+																	@101,
+																	@103,
+																	@105,
 																	@107,
-																	@117,
-																	@119,
+																	@110,
+																	@113,
+																	@118,
 																	@121,
-																	@125
+																	@131,
+																	@133,
+																	@135,
+																	@139
 																],
-																#links : @115
+																#links : @129
 															},
 															GrafoscopioNode {
 																#header : 'Installation instructions',
@@ -1137,7 +1265,7 @@ leave it like that, if your chosen method worked.
 																					#lastOffset : 591
 																				}
 																			},
-																			#children : @131,
+																			#children : @145,
 																			#level : 1,
 																			#links : OrderedCollection [
 																				'',
@@ -1202,7 +1330,7 @@ and executing the second part of the installation script (showed in figure \\ref
 You will see the progress bars and the ending of the installation process,
 as described in the steps 4 to 5 of the previous section.',
 																				#children : OrderedCollection [ ],
-																				#parent : @142,
+																				#parent : @156,
 																				#level : 3,
 																				#links : OrderedCollection [
 																					''
@@ -1246,7 +1374,7 @@ ConfigurationOfGrafoscopio load.
 ',
 																						#tags : 'código',
 																						#children : OrderedCollection [ ],
-																						#parent : @147,
+																						#parent : @161,
 																						#level : 4,
 																						#links : OrderedCollection [
 																							'',
@@ -1260,7 +1388,7 @@ ConfigurationOfGrafoscopio load.
 																						]
 																					}
 																				],
-																				#parent : @142,
+																				#parent : @156,
 																				#level : 3,
 																				#links : OrderedCollection [
 																					''
@@ -1280,7 +1408,7 @@ ConfigurationOfGrafoscopio load.
 ',
 																						#tags : 'código',
 																						#children : OrderedCollection [ ],
-																						#parent : @153,
+																						#parent : @167,
 																						#level : 4,
 																						#links : OrderedCollection [
 																							'',
@@ -1294,7 +1422,7 @@ ConfigurationOfGrafoscopio load.
 ',
 																						#tags : 'código',
 																						#children : OrderedCollection [ ],
-																						#parent : @153,
+																						#parent : @167,
 																						#level : 4,
 																						#links : OrderedCollection [
 																							'',
@@ -1302,40 +1430,40 @@ ConfigurationOfGrafoscopio load.
 																						]
 																					}
 																				],
-																				#parent : @142,
+																				#parent : @156,
 																				#level : 3,
 																				#links : OrderedCollection [
 																					''
 																				]
 																			}
 																		],
-																		#parent : @134,
+																		#parent : @148,
 																		#level : 2,
 																		#links : OrderedCollection [
 																			''
 																		]
 																	}
 																],
-																#parent : @83,
+																#parent : @97,
 																#level : 2,
 																#nodesInPreorder : OrderedCollection [
-																	@130,
-																	@132,
-																	@142,
 																	@144,
-																	@147,
-																	@149,
-																	@153,
-																	@155,
-																	@158
+																	@146,
+																	@156,
+																	@158,
+																	@161,
+																	@163,
+																	@167,
+																	@169,
+																	@172
 																],
-																#links : @140
+																#links : @154
 															},
 															GrafoscopioNode {
 																#header : 'Usage instructions',
 																#body : '',
 																#children : OrderedCollection [ ],
-																#parent : @83,
+																#parent : @97,
 																#level : 2,
 																#links : OrderedCollection [
 																	''
@@ -1383,7 +1511,7 @@ To see such examples please execute this code form the *playground*:
 																					#lastOffset : 415
 																				}
 																			},
-																			#children : @168,
+																			#children : @182,
 																			#level : 1,
 																			#links : OrderedCollection [
 																				'',
@@ -1417,7 +1545,7 @@ To see such examples please execute this code form the *playground*:
 GrafoscopioDocumentation openDatavizIntro',
 																		#tags : 'código',
 																		#children : OrderedCollection [ ],
-																		#parent : @171,
+																		#parent : @185,
 																		#level : 2,
 																		#links : OrderedCollection [
 																			'',
@@ -1432,14 +1560,14 @@ GrafoscopioDocumentation openDatavizIntro',
 																		]
 																	}
 																],
-																#parent : @83,
+																#parent : @97,
 																#level : 2,
 																#nodesInPreorder : OrderedCollection [
-																	@167,
-																	@169,
-																	@179
+																	@181,
+																	@183,
+																	@193
 																],
-																#links : @177
+																#links : @191
 															},
 															GrafoscopioNode {
 																#header : 'API documentation',
@@ -1480,7 +1608,7 @@ and see the messages organized by protocols execute:
 																					#lastOffset : 251
 																				}
 																			},
-																			#children : @184,
+																			#children : @198,
 																			#level : 1,
 																			#links : OrderedCollection [
 																				'',
@@ -1499,13 +1627,13 @@ and see the messages organized by protocols execute:
 																		]
 																	}
 																],
-																#parent : @83,
+																#parent : @97,
 																#level : 2,
 																#nodesInPreorder : OrderedCollection [
-																	@183,
-																	@185
+																	@197,
+																	@199
 																],
-																#links : @193
+																#links : @207
 															},
 															GrafoscopioNode {
 																#header : 'Tests',
@@ -1550,7 +1678,7 @@ from the [Pharo MOOC][mooc].',
 																					#lastOffset : 420
 																				}
 																			},
-																			#children : @197,
+																			#children : @211,
 																			#level : 1,
 																			#links : OrderedCollection [
 																				'',
@@ -1571,13 +1699,13 @@ from the [Pharo MOOC][mooc].',
 																		]
 																	}
 																],
-																#parent : @83,
+																#parent : @97,
 																#level : 2,
 																#nodesInPreorder : OrderedCollection [
-																	@196,
-																	@198
+																	@210,
+																	@212
 																],
-																#links : @206
+																#links : @220
 															},
 															GrafoscopioNode {
 																#header : 'Community Guidelines',
@@ -1607,7 +1735,7 @@ one.',
 																					#values : [ ]
 																				}
 																			},
-																			#children : @210,
+																			#children : @224,
 																			#level : 1,
 																			#links : OrderedCollection [
 																				'',
@@ -1639,7 +1767,7 @@ Before creating a new ticket, please be sure to visit the
 [current tickets][grafoscopio-tickets-current], to see if your issue/problem has been
 not reported already.',
 																		#children : OrderedCollection [ ],
-																		#parent : @213,
+																		#parent : @227,
 																		#level : 2,
 																		#links : OrderedCollection [
 																			'',
@@ -1681,7 +1809,7 @@ make sense.
 
 Welcome again to our community :-).',
 																		#children : OrderedCollection [ ],
-																		#parent : @213,
+																		#parent : @227,
 																		#level : 2,
 																		#links : OrderedCollection [
 																			'',
@@ -1695,15 +1823,15 @@ Welcome again to our community :-).',
 																		]
 																	}
 																],
-																#parent : @83,
+																#parent : @97,
 																#level : 2,
 																#nodesInPreorder : OrderedCollection [
-																	@209,
-																	@211,
-																	@220,
-																	@223
+																	@223,
+																	@225,
+																	@234,
+																	@237
 																],
-																#links : @218
+																#links : @232
 															},
 															GrafoscopioNode {
 																#header : '%idea external links',
@@ -1767,10 +1895,10 @@ Welcome again to our community :-).',
 [zotero]: https://www.zotero.org/
 [zotero-manual]: https://www.zotero.org/groups/diseo_y_creacion_phd_msc_universidad_de_caldas/items/collectionKey/PHGTCZVT',
 																#children : @40,
-																#parent : @83,
+																#parent : @97,
 																#level : 2,
 																#nodesInPreorder : OrderedCollection [
-																	@227
+																	@241
 																],
 																#links : @42
 															},
@@ -1785,53 +1913,53 @@ To see a full copy of such respective licenses, please visit the files under thi
 
 ',
 																#children : OrderedCollection [ ],
-																#parent : @83,
+																#parent : @97,
 																#level : 2,
 																#links : OrderedCollection [
 																	''
 																]
 															}
 														],
-														#parent : @81,
+														#parent : @95,
 														#level : 2,
 														#nodesInPreorder : OrderedCollection [
-															@83,
-															@85,
-															@87,
-															@89,
-															@91,
-															@93,
-															@96,
+															@97,
 															@99,
-															@104,
+															@101,
+															@103,
+															@105,
 															@107,
-															@117,
-															@119,
+															@110,
+															@113,
+															@118,
 															@121,
-															@125,
-															@130,
-															@132,
-															@142,
+															@131,
+															@133,
+															@135,
+															@139,
 															@144,
-															@147,
-															@149,
-															@153,
-															@155,
+															@146,
+															@156,
 															@158,
-															@164,
+															@161,
+															@163,
 															@167,
 															@169,
-															@179,
+															@172,
+															@178,
+															@181,
 															@183,
-															@185,
-															@196,
-															@198,
-															@209,
-															@211,
-															@220,
+															@193,
+															@197,
+															@199,
+															@210,
+															@212,
 															@223,
-															@227,
-															@229
+															@225,
+															@234,
+															@237,
+															@241,
+															@243
 														],
 														#links : OrderedCollection [
 															'',
@@ -1906,31 +2034,31 @@ To see a full copy of such respective licenses, please visit the files under thi
        </small> 
     </figcaption>
   <figure>',
-																#children : @75,
-																#parent : @234,
+																#children : @89,
+																#parent : @248,
 																#level : 3,
 																#nodesInPreorder : OrderedCollection [
-																	@236
+																	@250
 																],
-																#links : @76
+																#links : @90
 															},
 															GrafoscopioNode {
 																#header : '%embed LaTeX screenshot',
 																#body : '\\includegraphics{../../../../Imagenes/side-by-side.png}',
 																#children : OrderedCollection [ ],
-																#parent : @234,
+																#parent : @248,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
 																]
 															}
 														],
-														#parent : @81,
+														#parent : @95,
 														#level : 2,
 														#nodesInPreorder : OrderedCollection [
-															@234,
-															@236,
-															@238
+															@248,
+															@250,
+															@252
 														],
 														#links : OrderedCollection [
 															'',
@@ -1941,7 +2069,7 @@ To see a full copy of such respective licenses, please visit the files under thi
 														]
 													}
 												],
-												#parent : @67,
+												#parent : @81,
 												#level : 1,
 												#links : OrderedCollection [
 													''
@@ -1962,7 +2090,7 @@ To see a full copy of such respective licenses, please visit the files under thi
 link-citations: true
 ---',
 																#children : OrderedCollection [ ],
-																#parent : @246,
+																#parent : @260,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -1994,7 +2122,7 @@ infrastructure and setup.
 This Summer of code proposal is intended to work on the above problems to improve user experience, external tool
 integration and test coverage.',
 																#children : OrderedCollection [ ],
-																#parent : @246,
+																#parent : @260,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2019,7 +2147,7 @@ Future developments
   - Implement node and notebooks transclusion (like Org Mode and Leo). 
   - Integrate a language spell checker for text nodes.',
 																#children : OrderedCollection [ ],
-																#parent : @246,
+																#parent : @260,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2038,7 +2166,7 @@ Longer and more detailed. Provide technical details, show that you understand th
 
 ',
 																#children : OrderedCollection [ ],
-																#parent : @246,
+																#parent : @260,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2064,7 +2192,7 @@ it can be made more granular with the interaction with community during the Summ
 
 Table:  Summer of code timeline.',
 																#children : OrderedCollection [ ],
-																#parent : @246,
+																#parent : @260,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2085,7 +2213,7 @@ can be a powerful way to spread the Pharo advantages and show them in the contex
 research.
 This is also useful to develop computational narratives on Pharo and non Pharo related themes and frameworks.',
 																#children : OrderedCollection [ ],
-																#parent : @246,
+																#parent : @260,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2112,7 +2240,7 @@ Research and write how the project fits into the target organization. Explain re
 [spec-gt]: http://smalltalkhub.com/#!/~jfabry/Playground/packages/Spec-Glamour
 [quick-access]: https://www.youtube.com/watch?v=j-dTp6i_P3s',
 																#children : OrderedCollection [ ],
-																#parent : @246,
+																#parent : @260,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2154,25 +2282,25 @@ Please use the [tickets system][tickets] in this repository to provide feedback 
 
 ',
 																#children : OrderedCollection [ ],
-																#parent : @246,
+																#parent : @260,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
 																]
 															}
 														],
-														#parent : @244,
+														#parent : @258,
 														#level : 2,
 														#nodesInPreorder : OrderedCollection [
-															@246,
-															@248,
-															@251,
-															@254,
-															@257,
 															@260,
-															@263,
-															@266,
-															@269
+															@262,
+															@265,
+															@268,
+															@271,
+															@274,
+															@277,
+															@280,
+															@283
 														],
 														#links : OrderedCollection [
 															'',
@@ -2198,7 +2326,7 @@ refactoring. Also core Grafoscopio functionality needs better test coverage.
 This Summer of code proposal is intended to improve test coverage and make code refactoring on the Dataviz packages and
 on Grafoscopio core functionality.',
 																#children : OrderedCollection [ ],
-																#parent : @274,
+																#parent : @288,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2222,7 +2350,7 @@ Future developments
   - Improve Zotero and JabRef integration.
 ',
 																#children : OrderedCollection [ ],
-																#parent : @274,
+																#parent : @288,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2238,7 +2366,7 @@ Longer and more detailed. Provide technical details, show that you understand th
   - To implement code refactoring, Pharo refactoring tools will be used and Roassal custom builders will be implemented.
 ',
 																#children : OrderedCollection [ ],
-																#parent : @274,
+																#parent : @288,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2268,7 +2396,7 @@ it can be made more granular with the interaction with community during the Summ
 
 Table:  Summer of code timeline.',
 																#children : OrderedCollection [ ],
-																#parent : @274,
+																#parent : @288,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2285,7 +2413,7 @@ particularly agile visualization, for wider audience, that can help to bring mor
 and communities behind, so that more people are eager to use the environment and become part the communities,
 increasing their diversity and exposure.',
 																#children : OrderedCollection [ ],
-																#parent : @274,
+																#parent : @288,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2309,7 +2437,7 @@ in the community binding process.
 [data-selfies]: http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup
 [agile-visualization]: http://agilevisualization.com/',
 																#children : OrderedCollection [ ],
-																#parent : @274,
+																#parent : @288,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
@@ -2337,24 +2465,24 @@ Please use the [tickets system][tickets] in this repository to provide feedback 
 
 [tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket',
 																#children : OrderedCollection [ ],
-																#parent : @274,
+																#parent : @288,
 																#level : 3,
 																#links : OrderedCollection [
 																	''
 																]
 															}
 														],
-														#parent : @244,
+														#parent : @258,
 														#level : 2,
 														#nodesInPreorder : OrderedCollection [
-															@274,
-															@276,
-															@279,
-															@282,
-															@285,
 															@288,
-															@291,
-															@294
+															@290,
+															@293,
+															@296,
+															@299,
+															@302,
+															@305,
+															@308
 														],
 														#links : OrderedCollection [
 															'',
@@ -2362,7 +2490,7 @@ Please use the [tickets system][tickets] in this repository to provide feedback 
 														]
 													}
 												],
-												#parent : @67,
+												#parent : @81,
 												#level : 1,
 												#links : OrderedCollection [
 													''
@@ -2371,52 +2499,52 @@ Please use the [tickets system][tickets] in this repository to provide feedback 
 										],
 										#level : 0,
 										#nodesInPreorder : OrderedCollection [
-											@67,
-											@69,
-											@72,
-											@74,
-											@77,
 											@81,
 											@83,
-											@85,
-											@87,
-											@89,
+											@86,
+											@88,
 											@91,
-											@93,
-											@96,
+											@95,
+											@97,
 											@99,
-											@104,
+											@101,
+											@103,
+											@105,
 											@107,
-											@117,
-											@119,
+											@110,
+											@113,
+											@118,
 											@121,
-											@125,
-											@130,
-											@132,
-											@142,
+											@131,
+											@133,
+											@135,
+											@139,
 											@144,
-											@147,
-											@149,
-											@153,
-											@155,
+											@146,
+											@156,
 											@158,
-											@164,
+											@161,
+											@163,
 											@167,
 											@169,
-											@179,
+											@172,
+											@178,
+											@181,
 											@183,
-											@185,
-											@196,
-											@198,
-											@209,
-											@211,
-											@220,
+											@193,
+											@197,
+											@199,
+											@210,
+											@212,
 											@223,
-											@227,
-											@229,
+											@225,
 											@234,
-											@236,
-											@238,
+											@237,
+											@241,
+											@243,
+											@248,
+											@250,
+											@252,
 											@51,
 											@50,
 											GrafoscopioNode {
@@ -2440,7 +2568,7 @@ ConfigurationOfDataviz load.
 ',
 														#tags : 'código',
 														#children : OrderedCollection [ ],
-														#parent : @301,
+														#parent : @315,
 														#level : 4,
 														#links : OrderedCollection [
 															'',
@@ -2454,7 +2582,7 @@ ConfigurationOfDataviz load.
 													''
 												]
 											},
-											@303,
+											@317,
 											GrafoscopioNode {
 												#header : 'Usage instructions & Examples',
 												#body : 'As we said, Dataviz is a set of packaged exmaples of Domain Specific Visualizations and Domain Specific
@@ -2473,7 +2601,7 @@ the following code:;
 														#body : 'GrafoscopioDocumentation openDatavizIntro ',
 														#tags : 'código',
 														#children : OrderedCollection [ ],
-														#parent : @307,
+														#parent : @321,
 														#level : 4,
 														#links : OrderedCollection [
 															''
@@ -2600,7 +2728,7 @@ But, just for reference, plese see the Community Guidelines section in the
 												#parent : @50,
 												#level : 3,
 												#nodesInPreorder : OrderedCollection [
-													@326
+													@340
 												],
 												#links : @42
 											},
@@ -2624,24 +2752,24 @@ To see a full copy of such respective licenses, please visit the files under thi
 											@57,
 											@59,
 											@62,
-											@244,
-											@246,
-											@248,
-											@251,
-											@254,
-											@257,
+											@258,
 											@260,
-											@263,
-											@266,
-											@269,
+											@262,
+											@265,
+											@268,
+											@271,
 											@274,
-											@276,
-											@279,
-											@282,
-											@285,
+											@277,
+											@280,
+											@283,
 											@288,
-											@291,
-											@294
+											@290,
+											@293,
+											@296,
+											@299,
+											@302,
+											@305,
+											@308
 										],
 										#links : OrderedCollection [ ]
 									},
@@ -2653,14 +2781,14 @@ To see a full copy of such respective licenses, please visit the files under thi
 								#level : 2,
 								#nodesInPreorder : OrderedCollection [
 									@50,
-									@301,
-									@303,
-									@307,
-									@313,
-									@316,
-									@323,
-									@326,
-									@328
+									@315,
+									@317,
+									@321,
+									@327,
+									@330,
+									@337,
+									@340,
+									@342
 								],
 								#links : OrderedCollection [
 									'',
@@ -2672,12 +2800,12 @@ To see a full copy of such respective licenses, please visit the files under thi
 							#level : 3,
 							#links : @38
 						},
-						@301,
-						@307,
-						@313,
-						@323,
-						@326,
-						@328
+						@315,
+						@321,
+						@327,
+						@337,
+						@340,
+						@342
 					],
 					#parent : @4,
 					#level : 1,
@@ -2685,267 +2813,34 @@ To see a full copy of such respective licenses, please visit the files under thi
 						@45,
 						@47,
 						@49,
-						@301,
-						@303,
-						@307,
-						@309,
-						@313,
+						@315,
+						@317,
+						@321,
 						@323,
-						@326,
-						@328
+						@327,
+						@337,
+						@340,
+						@342
 					],
-					#links : @334
+					#links : @348
 				},
 				@47,
 				@49,
-				@301,
-				@303,
-				@307,
-				@309,
-				@313,
+				@315,
+				@317,
+				@321,
 				@323,
-				@326,
-				@328,
-				GrafoscopioNode {
-					#header : '%idea JOSS paper',
-					#body : '  ---
-  title: \'Dataviz: A package of domain specific visualizations and languages for the Pharo live coding environment\'
-  tags:
-    - literate computing
-    - reproducible research
-    - data visualization
-    - agile visualization
-    - data activism
-    - pocket infrastructures
-    - moldable tools
-    - civil tech
-    - grafoscopio
-  authors:
-   - name: Offray Vladimir Luna Cárdenas
-     orcid: 0000-0002-4640-6984
-     affiliation: 1
-     affiliation: 2
-     affiliation: 3
-  affiliations:
-   - name: HackBo: a hackerspace in Bogotá
-     index: 1
-   - name: mutabiT
-     index: 2
-  - name: University of Caldas
-     index: 3
-  date: 29 March 2017
-  bibliography: paper.bib
-  ---
-
-  # Summary
-
-  Dataviz is a companion package for Grafoscopio [ @luna-2014] that puts together several examples of Domain
-  Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the Roassal
-  agile visualization engine [@bergel].
-  Included prototypes approach several themes like:  
-  Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
-  and published medicine access [@luna-infomed] and are presented via blog post and internal 
-  interactive documentation via Grafoscopio notebooks.
-  The classes in the package and their documentation show several levels of maturity from pretty mature 
-  (Panama Papers) to early coder practices (Infomed) and are offered as examples and excersises to learners in our
-  recurrent Dataviz workshop+hackathon, for code testing and refactoring.
-  
-  %embed HTML screenshot
-  %embed LaTeX screenshot
-
-  # References
-',
-					#children : @58,
-					#parent : @4,
-					#level : 1,
-					#nodesInPreorder : OrderedCollection [
-						@336,
-						@59,
-						@62
-					],
-					#links : @66
-				},
-				@59,
-				@62,
-				GrafoscopioNode {
-					#header : 'Bibliography',
-					#body : '',
-					#children : OrderedCollection [
-						GrafoscopioNode {
-							#header : '%invisible ',
-							#body : '',
-							#children : OrderedCollection [
-								GrafoscopioNode {
-									#header : 'Quering Zotero collection and exporting as BibTeX',
-									#body : '"This script updates the bibliography for this document with the latest
-available online. Useful if you\'re adding new bibliographic references"
-| bibTeXData bibFile bibliography tempStream |
-bibTeXData := (ZoteroLibrary new groupID: \'204755\') subcollectionAsBibTeX: \'PHGTCZVT\'.
-tempStream := \'\' writeStream.
-bibliography := CZBibParser parse: bibTeXData.
-bibliography entries do: [ :entry | 
-\tentry fields second key = \'shorttitle\'
-\t\tifTrue: [entry key: entry fields second value ].
-\ttempStream nextPutAll: (BibBibRenderer new render: entry) contents].
-bibFile := FileLocator home asFileReference / \'Programas\' / \'Grafoscopio\' / \'Doc\' / \'Docs\' / \'En\' / \'Books\' / \'Manual\' / \'bibliography.bib\'.
-bibFile exists
-\tifTrue: [ bibFile delete ] 
-\tifFalse: [ bibFile ensureCreateFile ].
-bibFile writeStreamDo: [ :stream | stream nextPutAll: tempStream contents ].
-bibFile
-
-',
-									#tags : 'código',
-									#children : OrderedCollection [ ],
-									#parent : @340,
-									#level : 3,
-									#links : OrderedCollection [
-										'',
-										'http://ws.stfx.eu/4138G3OYJZ9I'
-									]
-								},
-								GrafoscopioNode {
-									#header : 'Problems with Pandoc and bibliography',
-									#body : 'This note is here, to provide context, but it should be moved to the developers notebook.
-
-While running the PDF conversion command:
-
-~~~
-pandoc -N --template=mytemplate.tex --variable fontsize=12pt --variable version=1.3.4 --latex-engine=xelatex --toc --bibliography bibliography.bib manual.markdown -o manual.pdf
-~~~
-
-I got this error:
-
-~~~
-pandoc-citeproc: "stdin" (line 8, column 2):
-unexpected "m"
-expecting "c", "C", "p", "P", "s" or "S"
-CallStack (from HasCallStack):
-  error, called at src/Text/CSL/Input/Bibtex.hs:113:32 in pandoc-citeproc-0.10.4-Ks7e5k595uURtHUpwsSlk:Text.CSL.Input.Bibtex
-pandoc: Error running filter pandoc-citeproc
-Filter returned error status 1
-~~~
-
-The problem is the way Zotero or Citezen are creating BibTeX entries that contain has a value in the field "Adicional" in the Zotero
-library (mi Zotero UI is in Spanish), represented in the exported entry as note: {}.
-They should be removed. 
-May be we should control the fields exported by Citezen, editing or deleting all conflicting fields/characters for pandoc-citeproc. ',
-									#children : OrderedCollection [ ],
-									#parent : @340,
-									#level : 3,
-									#links : OrderedCollection [
-										'',
-										'https://github.com/jgm/pandoc/issues/1034'
-									]
-								},
-								GrafoscopioNode {
-									#header : 'Old citezen tests',
-									#body : 'Previously I made some tests with [citezen][citezen] for cleaning the bibliographic references,
-but that implementation was abandoned, because it was far too specific.
-Now that I\'m implemeting Zotero back end in a more general way, would be nice to retake
-the initial citezen experiments.
-
-See/browse children nodes for some details on previos exploration.
-
-[citezen]: (http://people.untyped.org/damien.pollet/software/citezen/)',
-									#children : OrderedCollection [
-										GrafoscopioNode {
-											#header : 'Tweet',
-											#body : '',
-											#children : OrderedCollection [
-												GrafoscopioNode {
-													#header : 'Script screenshot zoom',
-													#body : '',
-													#children : OrderedCollection [ ],
-													#parent : @350,
-													#level : 5,
-													#links : OrderedCollection [
-														'',
-														'https://www.enlightenment.org/ss/e-54454b6c965410.68921158.jpg'
-													]
-												}
-											],
-											#parent : @348,
-											#level : 4,
-											#links : OrderedCollection [
-												'',
-												'https://twitter.com/offrayLC/status/524258229875142657'
-											]
-										},
-										GrafoscopioNode {
-											#header : 'Thread asking for bibtex support',
-											#body : '',
-											#children : OrderedCollection [
-												GrafoscopioNode {
-													#header : 'Old script',
-													#body : '| bibFile bibliography bibStream bibOutputer |
-bibFile := ((FileLocator documents / \'U/Libertadores/Grafoscopio/Docs/Es/Articulos/Libertadores/\') children
-    detect: [:each | each basename endsWith: \'bib\' ]).
-bibliography := CZBibParser parse: bibFile contents.
-bibStream := \'\' writeStream.
-(bibliography entries) do: [:bibItem |
-\tbibItem fields do: [:some | some key = \'shorttitle\'
-\t\tifTrue: [ bibItem key: some value ]].
-\tbibOutputer := CZBibTeXDocBuilder  new.
-\tbibStream nextPutAll: 
-\t\t\t(bibOutputer entryToBibtexString: bibItem); cr].
-bibliography.
-bibFile writeStreamDo: [:stream |
-       stream nextPutAll: bibStream contents withUnixLineEndings ].
-bibStream contents.
-',
-													#tags : 'código',
-													#children : OrderedCollection [ ],
-													#parent : @356,
-													#level : 5,
-													#links : OrderedCollection [
-														'',
-														'http://ws.stfx.eu/3CEKQQQ3NL2E'
-													]
-												}
-											],
-											#parent : @348,
-											#level : 4,
-											#links : OrderedCollection [
-												'',
-												'http://forum.world.st/Citizen-example-for-manipulating-a-bibtex-file-tt4784240.html#a4822230'
-											]
-										}
-									],
-									#parent : @340,
-									#level : 3,
-									#links : OrderedCollection [
-										''
-									]
-								}
-							],
-							#parent : @338,
-							#level : 2,
-							#links : OrderedCollection [
-								'',
-								''
-							]
-						}
-					],
-					#parent : @4,
-					#level : 1,
-					#links : OrderedCollection [
-						'',
-						'',
-						'',
-						'',
-						'',
-						''
-					]
-				},
+				@327,
+				@337,
 				@340,
 				@342,
-				@345,
-				@348,
-				@350,
-				@352,
-				@356,
-				@358
+				@76,
+				@59,
+				@62,
+				@65,
+				@67,
+				@69,
+				@73
 			],
 			#links : OrderedCollection [ ]
 		},
@@ -2957,6 +2852,5 @@ bibStream contents.
 	@6,
 	@30,
 	@45,
-	@336,
-	@338
+	@76
 ]
