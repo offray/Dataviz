@@ -598,7 +598,7 @@ generated output:
   of Domain Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the Roassal
   agile visualization engine [@bergel_agile_2016].
   Included prototypes approach several themes like:  
-  Panama Papers as reproducible Research [@luna-panama-papers-2016], Twitter Data Selfies [@luna-twitter-ds-2016]
+  Panama Papers as reproducible Research [@luna-panama-papers-2016], Twitter data selfies [@luna-twitter-ds-2016]
   and published medicine access [@luna-dsv-infomed-2016] and are presented via blog post and internal interactive
   documentation via Grafoscopio notebooks.
   The classes in the package and their documentation show several levels of maturity from pretty mature (Panama Papers)
