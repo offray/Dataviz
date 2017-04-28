@@ -28,7 +28,7 @@ and/or its documentation deeper.',
 							#children : OrderedCollection [
 								GrafoscopioNode {
 									#header : 'Launch interactive notebook',
-									#body : 'OffshoreLeaksDB ope',
+									#body : 'OffshoreLeaksDB openIntroNotebook',
 									#tags : 'código',
 									#children : OrderedCollection [ ],
 									#parent : @8,
