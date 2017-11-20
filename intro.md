@@ -1,4 +1,4 @@
----exportedFrom: ea4d7c7aae4b4a66c98c07fbda70bf7e876211de---# The Dataviz package
+---exportedFrom: f252a7590f5a6e06d67d5e8f727e14f451dcc863---# The Dataviz package
 
 <!--
 This subtree produces the intro file that is the default page you see when visiting:
@@ -67,7 +67,7 @@ Here are some other quick entry points for Dataviz:
   - The Dataviz paper for [JOSS][joss] will give you a quick scholar view for the software: 
     abstract, metatada and links and to dig deeper:
     [[source](./JOSS/paper.md)] | 
-    [[PDF](./paper.pdf)].
+    [[PDF](./JOSS/paper.pdf)].
   - The [Dataviz source code repository][dataviz-sthub] on SmalltalkHub.
 
 

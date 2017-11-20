@@ -242,7 +242,7 @@ Here are some other quick entry points for Dataviz:
   - The Dataviz paper for [JOSS][joss] will give you a quick scholar view for the software: 
     abstract, metatada and links and to dig deeper:
     [[source](./JOSS/paper.md)] | 
-    [[PDF](./paper.pdf)].
+    [[PDF](./JOSS/paper.pdf)].
   - The [Dataviz source code repository][dataviz-sthub] on SmalltalkHub.
 ',
 							#tags : OrderedCollection [
@@ -660,16 +660,16 @@ generated output:
 
   # Summary
 
-  Dataviz is a companion package for Grafoscopio [ @luna-grafoscopio-2014] that puts together several examples
+  Dataviz is a companion package for Grafoscopio [ @luna_cardenas_metaforas_2014] that puts together several examples
   of Domain Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the Roassal
   agile visualization engine [@bergel_agile_2016] in the fields of data activism [@milan_medios_2015], civic
   hacking [@schrock_civic_2016].
-  Dataviz is the result of a PhD in Design & Creation, which in informed by the technique of observant participation   
+  Dataviz is the result of a PhD in Design & Creation, which in informed by the technique of observant participation
   [@moeran_participant_2007] and tries a critical approach to inhabit and foster communities and to provide them with some 
   tools and prototypes for their usual endeavors.
-  Included prototypes approach several themes like:  
-  Panama Papers as reproducible Research [@luna-panama-papers-2016], Twitter data selfies [@luna-twitter-ds-2016]
-  and published medicine access [@luna-dsv-infomed-2016] and are presented via blog post and internal interactive
+  Included prototypes approach several themes like:
+  Panama Papers as reproducible Research [@luna_cardenas_panama_2016], Twitter data selfies [@luna_cardenas_twitter_2016]
+  and published medicine access [@luna_cardenas_domain_2016] and are presented via blog post and internal interactive
   documentation via Grafoscopio notebooks.
   The classes in the package and their documentation show several levels of maturity from pretty mature (Panama Papers)
   to early coder practices (Infomed) and are offered as examples and excersises to learners in our recurrent Data Week
