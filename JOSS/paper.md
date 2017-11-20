@@ -1,4 +1,4 @@
----exportedFrom: 9195c534734c439d3afd0f369b7a0c0d2dfb214f---  ---
+---exportedFrom: 97d4ab6c344d331392441434764ea6dbd11a338a---  ---
   title: 'Dataviz: A package of domain specific visualizations and languages for the Pharo live coding environment'
   tags:
     - literate computing
@@ -55,7 +55,7 @@
   The classes in the package and their documentation show several levels of maturity from pretty mature (Panama Papers)
   to early coder practices (Infomed) and are offered as examples and excersises for data activist and related practitioners 
   (in journalism, research a other fields) practical examples of how pocket infrastructures could be provided for such fields and
-  the Data Week W our recurrent Data Week workshop+hackathon, for code testing and refactoring, while
+  are used in our recurrent Data Week workshop+hackathon, for code testing and refactoring, while
   
   
   
