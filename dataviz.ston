@@ -671,9 +671,22 @@ generated output:
   Panama Papers as reproducible Research [@luna_cardenas_panama_2016], Twitter data selfies [@luna_cardenas_twitter_2016]
   and published medicine access [@luna_cardenas_domain_2016] and are presented via blog post and internal interactive
   documentation via Grafoscopio notebooks.
+  Dataviz is part of a set of "pocket infrastructures"  which are arrangements of tools which are characterized for being: simple, 
+  self contained, and working fine on-line and off-line and run in a wide spectrum of hardware, from USB drives to modest laptops 
+  and beyond (and in between), which contrast sharply with the exclusionary discourse, infrastructure and practice of "Big Data" and 
+  the classical idea of predicting the future by hyping only a part of it. 
+  Using such pocket infrastructures (like Dataviz, Grafosocpio and Fossil), researchers propose a way to put in "everybody\'s pockets" 
+  the tools for being a data/digital citizen, instead in only the places with "deep pockets" (money, resources, big data centers, 
+  gigantic data bases & data sets and so on), and some prototypes, like the one the Panama Papers, are showing that is possible to 
+  have a more inclusive approach, to problems that has been approached only from the Big Data perspective.
+  This also means an alternative way of dealing with data.
+  Instead of being the data threshing machine that tries to process everything, pocket infrastructures try to "build the magnet to 
+  find the needle in the haystack", focusing on frictionless interconnected data [@pollock_frictionless_2013] and zooming out 
+  from there.
   The classes in the package and their documentation show several levels of maturity from pretty mature (Panama Papers)
-  to early coder practices (Infomed) and are offered as examples and excersises to learners in our recurrent Data Week
-  workshop+hackathon, for code testing and refactoring.
+  to early coder practices (Infomed) and are offered as examples and excersises for data activist and related practitioners 
+  (in journalism, research a other fields) practical examples of how pocket infrastructures could be provided for such fields and
+  the Data Week W our recurrent Data Week workshop+hackathon, for code testing and refactoring, while
   
   %embed HTML screenshot
   %embed LaTeX screenshot
