@@ -1,10 +1,14 @@
----exportedFrom: 97d4ab6c344d331392441434764ea6dbd11a338a---# Dataviz readme
+     <meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/apidoc.css?">
 
-<!--
-This subtree produces the readme markdown file that is used to produce the page you see when visiting:
+# Dataviz readme
 
-http://mutabit.com/repos.fossil/grafoscopio/doc/tip/Packages/Dataviz/readme.html
--->
+ <div class="topnav">
+  <a class="active" href="#">Home</a> |
+  <a href="../../timeline">Timeline</a> |
+  <a href="../../ticket">Tickets</a> |
+  <a href="../../dir?ci=tip">Files</a> |
+</div> 
+
 
 <p>
   <a href="http://mutabit.com/offray/blog/en/entry/ds-twitter-mockup">
@@ -43,21 +47,27 @@ Dataviz is a companion package for [Grafoscopio][grafoscopio-en] that puts toget
 Specific Visualizations and Domain Specific Languages (DSV, DSL, respectively) developed with the 
 [Roassal agile visualization engine][roassal].
 Included prototypes approach several themes like:  
-Panama Papers as reproducible Research [@luna-pp], Twitter Data Selfies [@luna-tds]
-and published medicine access [@luna-infomed] and are presented via blog post and internal 
+[Panama Papers as reproducible Research][panama-papers], [Twitter Data Selfies][data-selfies]
+and [published medicine access][sdv-infomed] and are presented via blog post and internal 
 interactive documentation via Grafoscopio notebooks.
 The classes in the package and their documentation show several levels of maturity from pretty mature 
 (Panama Papers) to early coder practices (Infomed) and on going developments (Twitter Data Selfies) and 
-are offered as examples and excersises to learners in our recurrent Dataviz workshop+hackathon, for code 
-testing and refactoring.
+are offered as examples and excersises to learners, for code testing and refactoring, in our recurrent 
+workshop+hackathon for data activism and digital citizenship workshops.
+
+[panama-papers]: https://mutabit.com/offray/blog/en/entry/panama-papers-1
+[data-selfies]: https://mutabit.com/offray/blog/en/entry/ds-twitter-mockup
+[sdv-infomed]: https://mutabit.com/offray/blog/en/entry/sdv-infomed
 
 It is suposed that you have familiarity with Grafoscopio and that you are in the same audience, as stated
 in its manual:
 
-> Grafoscopio and its companion package, Dataviz, are intended to be used by learners and researchers 
-in several fields: academia, journalism, activism, hacktivism and for anyone interested in open reproducible 
-research and data storytelling backed by data and agile visualizations [@bergel_agile_2016].
-This document assumes that you are such person.
+> "Grafoscopio and its companion package, Dataviz, are intended to be used by learners and researchers 
+> in several fields: academia, journalism, activism, hacktivism and for anyone interested in open reproducible 
+> research and data storytelling backed by data and agile visualizations.
+> This document assumes that you are such person."
+>
+>      --[The Grafoscopio User Manual](http://mutabit.com/repos.fossil/grafoscopio/uv/Docs/En/Books/Manual/manual.pdf)
 
 Here are some other quick entry points for Dataviz:
 
@@ -68,7 +78,7 @@ Here are some other quick entry points for Dataviz:
     [[PDF](./paper.pdf)].
   - The [Dataviz source code repository][grafoscopio-sthub] on SmalltalkHub.
 
-### Instalation instructions
+## Instalation instructions
 
 Dataviz package is installed by default with the installation of Grafoscopio, but you can
 install it separately by using Monticello Pharo package manager configurations. 
@@ -76,19 +86,19 @@ To install and load Dataviz, simply run:
 
 
 
-~~~{.numberLines}
+~~~
 "Start by loading the configuration of Dataviz"
   Gofer new
     url: 'http://smalltalkhub.com/Offray/Dataviz/main';
     package: 'ConfigurationOfDataviz';
   load.
 
-"After that load Datavi"
+"After that load Dataviz"
 ConfigurationOfDataviz load.
 
 ~~~
 
-### Usage instructions & Examples
+## Usage instructions & Examples
 
 As we said, Dataviz is a set of packaged exmaples of Domain Specific Visualizations and Domain Specific
 Language (DSV and DSL) using Roassal agile visualization engine and/or documented with Grafoscopio
@@ -97,15 +107,18 @@ notebook, so the usage instructions is related with how to use and explore such 
 Dataviz presents a main notebook (from which this  ̀readme ̀ file was generated), that introduce
 its Domain Specific Visualizations & Languages.
 To open the notebook go to the Grafoscopio docking bar and select `Help > Dataviz` or execute
-the following code:;
+the following code:
 
-
-
-~~~{.numberLines}
-GrafoscopioDocumentation openDatavizIntro 
+~~~
+GrafoscopioNotebook open: DatavizDocs introNotebook
 ~~~
 
-### API documentation
+You will see an interactive notebook, like the one showed below, that you can use to
+start your interactive exploration:
+
+![Example of the introductory Grafoscopio interactive notebook, that also loads specific notebooks for other examples.](https://i.imgur.com/itQRXzF.png)
+
+## API documentation
 
 Dataviz, like Grafoscopio, inhabits the Pharo full live coding environment,
 and we follow the custom of making the API documentation available
@@ -116,7 +129,7 @@ and see the objects and  messages organized by protocols, are provided in the co
 notebook, with other contextual information, so we recoment to refer to the notebook API documentation.
 
 
-### Community Guidelines
+## Community Guidelines
 
 Because the community that makes/uses Grafoscopio is the same for Dataviz,
 we follow the same community guidelines for contributing to the community,
@@ -124,6 +137,35 @@ reporting bugs and other ways of collaboration.
 It is supposed that you are familiar with Grafoscopio and its manual, if you are using Dataviz.
 But, just for reference, plese see the Community Guidelines section in the 
 [Grafoscopio manual][grafoscopio-manual] for more detailed information about the above subjects.
+
+## Licences
+
+Dataviz is licensed under MIT license and the readme and the Dataviz 
+documentation downloaded with the package installation is licensed under a 
+modified P2P license.
+To see a full copy of such respective licenses, please visit the files under this repository:
+
+  - [Dataviz source code and software MIT license](../../Docs/En/Licenses/grafoscopio-mit.md)
+  - [Dataviz documentation P2P modified license](../../Docs/En/Licenses/documents-p2p-ismb.md)
+
+## Why two source code repositories?
+
+We split the repositories in two because the Fossil powered one is well suited for files and tickets,
+while the SmalltalkHub one is best suited for Smalltalk source code. 
+For historical reasons, different Smalltalk communities developed and hosted their source code there, 
+which gives them the autonomy of a simple and self-contained DVCS, that was wrote in the language they knew.
+That was before the popularity of DVCS advanced by Git and GitHub, and now most projects are being migrated to 
+GitHub to get more visibility and improve collaboration (SmalltalkHub uses an simple optimistic versioning 
+system that is showing its age), while sacrificing autonomy, simplicity and self-containment.
+We think that Fossil as a back end could provide the advantages of a modern DVCS, while keeping
+the properties we like to have regarding autonomy, simplicity and self-containment, while avoiding
+the paradoxical and excesive centralization that GitHub brings to the web.
+At some point we hope that the work is being done in the Git/GitHub front to migrate
+source code from Smalltalk would be useful to host a single Fossil repository containing
+software and documentation (and issues for both).
+Meanwhile, we will split them in the ones mentioned before.
+
+<!-- links -->
 
 [agileviz-quickstart]: https://dl.dropboxusercontent.com/u/31543901/AgileVisualization/QuickStart/0101-QuickStart.html
 [beaker]: http://beakernotebook.com/
@@ -139,11 +181,11 @@ But, just for reference, plese see the Community Guidelines section in the
 [fuel]: http://rmod.inria.fr/web/software/Fuel
 [fossil]: http://fossil-scm.org/
 [joss]: http://joss.theoj.org/
-[grafoscopio-en]: http://mutabit.com/grafoscopio/index.en.html
-[grafoscopio-fossil]: http://mutabit.com/repos.fossil/grafoscopio/
-[grafoscopio-manual]: http://mutabit.com/repos.fossil/grafoscopio/doc/tip/Docs/En/Books/Manual/manual.pdf
-[grafoscopio-tickets]: http://mutabit.com/repos.fossil/grafoscopio/ticket
-[grafoscopio-tickets-current]: http://mutabit.com/repos.fossil/grafoscopio/rptview?rn=1
+[grafoscopio-en]: https://mutabit.com/grafoscopio/index.en.html
+[grafoscopio-fossil]: https://mutabit.com/repos.fossil/grafoscopio/
+[grafoscopio-manual]: https://mutabit.com/repos.fossil/grafoscopio/uv/Docs/En/Books/Manual/manual.pdf
+[grafoscopio-tickets]: https://mutabit.com/repos.fossil/grafoscopio/ticket
+[grafoscopio-tickets-current]: https://mutabit.com/repos.fossil/grafoscopio/rptview?rn=1
 [grafoscopio-sthub]: http://smalltalkhub.com/#!/~Offray/Grafoscopio
 [git]: https://en.wikipedia.org/wiki/Git
 [github]: https://en.wikipedia.org/wiki/GitHub
@@ -187,14 +229,4 @@ But, just for reference, plese see the Community Guidelines section in the
 [zotero]: https://www.zotero.org/
 [zotero-manual]: https://www.zotero.org/groups/diseo_y_creacion_phd_msc_universidad_de_caldas/items/collectionKey/PHGTCZVT
 
-### Licences
-
-Dataviz is licensed under MIT license and the readme and the Dataviz 
-documentation downloaded with the package installation is licensed under a 
-modified P2P license.
-To see a full copy of such respective licenses, please visit the files under this repository:
-
-  - [Dataviz source code and software MIT license](../../Docs/En/Licenses/grafoscopio-mit.md)
-  - [Dataviz documentation P2P modified license](../../Docs/En/Licenses/documents-p2p-ismb.md)
-
-
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js"></script><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
